@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Group of Monuments at Hampi
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        .hampisubpage p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+
+
+        }
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        .hampisubpage img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+        .infoone {
+            font-size: 25px;
+        }
+
+        .infoone p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+
+        }
+
+        .infoone img {
+            padding-left: 250px;
+
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: rgb(0, 0, 0);
+            align-items: center;
+            padding-left: 5px;
+            margin-left: 130px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+          
+
+        }
+        
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+        ul li a:hover{
+    color: rgb(219, 98, 154);
+    text-decoration: underline;
+    padding-bottom: 5px;
+    text-decoration-color: rgb(219, 98, 154);
+    
+    
+  }
+    </style>
+
+</head>
+
+<body  bgcolor="#F5CEC7">
+
+    <div class="navbar">
+        <div class="icon">
+            <a href="index.html">
+                <img src="photos/logob.png" width="130px" height="130px">
+            </a>
+        </div>
+
+        <div class="menu">
+            <!--menu bar-->
+            <ul>
+
+                <li><a href="about.html"></i>About Us</a></li>
+                <li><a>Destination</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="North.html" target="_blank">North</a></li>
+                            <li><a href="South.html" target="_blank">South</a></li>
+                            <li><a href="East.html" target="_blank">East</a></li>
+                            <li><a href="West.html" target="_blank">West</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="review.html">Review</a></li>
+
+
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+            <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg> </button></a>
+            <script>
+                function openPage() {
+                    var x = document.getElementById("search").value;
+                    if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                    if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                    if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                    if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                    if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                    if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                    if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                    if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                    if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                    if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                    if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                    if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                    if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                    if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                    if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                    if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                    if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                    if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                    if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                    if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                    if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                    if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                    if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                    if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                    if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                    if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                    if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                    if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                    if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                    if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                    if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                    if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                    if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                    if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                    if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                    if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                    if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                    if (x === "") { window.open(".html") };
+
+
+
+                }
+            </script>
+
+        </div>
+    </div>
+    <br>
+
+    <section>
+
+
+        <div class="hampisubpage">
+            <img src="photos/hampi.jpg" width="1000px" height="600px" ALIGN="left"><br>
+            <h1 ALIGN="right">
+                <br> <br> <br> <br>
+                <pre>     Group of Monuments<br> at Hampi</pre>
+            </h1>
+
+            <h2>Karnataka</h2>
+            <br><br>
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <a class="bar" href="#abouttheplace">About the place</a>
+            <a class="bar" href="#besttimetovisit">Best time to visit</a>
+            <a class="bar" href="#monuments">Monuments</a>
+            <a class="bar" href="#transportation">Transportation</a>
+            <br><br><br><br>
+
+
+            <div class="scroll" id="abouttheplace">
+                <h2>About the place</h2>
+                <br>
+                <p>
+
+                    Hampi is situated on the southern bank of the river Tungabhadra in Karnataka.
+                    It is located within the ruins of the city of Vijayanagara, the former capital of the Vijayanagara
+                    Empire.
+                    The empire boasted a massive army comprising close to a million men. In around 1500 AD Vijaynagar
+                    had about 500,000
+                    inhabitants (supporting 0.1% of the global population during 1440-1540),making it the second largest
+                    city in the world.
+                    It is world heritage site since 1986.
+                    <br>Hampi has its name mentioned as Kishkinda in the epic Ramayana. The kingdom belonged to Bali and
+                    Sugriva. Bali was killed by Lord Rama.
+                    <br>Sugriva wholeheartedly supported Lord Rama to get back his wife, Devi Sita from the Demon King
+                    Ravana from Lanka. Historical accounts verify that Hampi was the capital city of the
+                    powerful Vijayanagar Empire in South India. <br>Under the rule of Krishna Deva Raya (1509-30) the
+                    empire was prosperous. Enriched by the cotton and the spice trade it was one of the
+                    most beautiful cities of the time. <br>Its palaces and Dravidian temples were much admired by
+                    travelers, be it Arab (Abdul Razaak), Portuguese (Domingo Paes) or Italian (Nicolò dei Conti).
+                    <br> Conquered by the Deccan Muslim alliance of 5 Kings in 1565, the city was looted over a period
+                    of six months before being abandoned.
+                </p>
+            </div>
+            <div class="scroll" id="besttimetovisit">
+
+                <br><br>
+                <h2>Best Time to Visit</h2>
+                <br>
+                <p>
+                    The best time to visit Hampi, Karnataka , is during the months of October to March,
+                    when the climate is quite cool and pleasant for outdoor sightseeing.
+                    <br>Tourism is at its boom during this season.
+                </p>
+            </div>
+            <br>
+            <div class="scroll" id="monuments">
+                <div class="infoone">
+                    <h1>Monuments</h1>
+                    <h3>
+                        VIRUPAKSHA TEMPLE
+                    </h3>
+                    <img src="photos/VIRUPAKSHA1.jpg" width="1000px" height="700px" ALIGN="center"><br>
+                    <br><br>
+                    <p>
+                        Also known as the Pampapathi temple, it is the most famous temple in Hampi and dates back to the
+                        7th century.
+                        <br>It is dedicated to Lord Shiva and has beautifully carved walls, each telling a mythological
+                        story.
+                        <br>The temple houses a shrine for Virupaksha and another for Sage Vidyaranya. Virupaksha Temple is
+                        an important shrine for worshippers of Lord Shiva.
+                        <br>It is located on the south banks of Tungabhadra. The Temple, ever since its inception in 7th
+                        Century AD has never had a non-functional day,
+                        making it one of the oldest temples in an uninterrupted run in India.
+                    </p>
+                </div>
+                <br>
+                <div class="infoone">
+                    
+                    <h3>
+                        VITHALA TEMPLE
+                    </h3>
+                    <img src="photos/Vittalatemple1.webp" width="1000px" height="700px" ALIGN="center"><br>
+                    <br>
+                    <p>
+                        The Vithala Temple dates back to the 16th century. The main gate has an impressive arch with carvings,
+                         and opens in a large courtyard which has the famous stone chariot in the center.<br> The famous stone chariot, which has become an iconic symbol of the architecture of Hampi,
+                          is located inside the premises of this temple.<br> The main temple is located just behind the chariot and has beautiful carvings.
+                           <br>There are also several other smaller temples inside the courtyard, all of which are definitely worth a visit. 
+                        <br>The carvings on the walls/pillars of these structures depict various gods in different forms.
+                    </p>
+                </div>
+                <br>
+                <div class="infoone">
+                    
+                    <h3>
+                        ELEPHANT STABLES
+                    </h3>
+                    <img src="photos/ELEOHANTTEMPLE1.jpeg" width="1000px" height="700px" ALIGN="center"><br>
+                    <br>
+                    <p>
+                        The Elephant Stables in Hampi served as an enclosure for royal elephants back in the days of the Vijayanagra Empire. 
+                        <br>Eleven domed chambers are seen here in a long row with a particularly decorated one which served as an enclosure for the musicians during any performances.
+                    </p>
+                </div>
+                <br>
+                <div class="infoone">
+                    
+                    <h3>
+                        LOTUS MAHAL
+                    </h3>
+                    <img src="photos/LOTUS1.jpg" width="1000px" height="700px" ALIGN="center"><br>
+                    <br>
+                    <p>
+                        This visually appealing structure has two levels, with open pavilions at the bottom and balconies above. 
+                        An elegant example of the fusion of the Hindu and Muslim style of architecture, the Mahal (Palace)<BR> derives its name from its beautiful,
+                         geometrically arranged cusped arches that resemble the petals of a lotus flower opening to the sun.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <br><br><br>
+        <div class="scroll" id="transportation">
+            <h2>Transportation</h2>
+
+            <div class="transport">
+                <div class="travel">
+                    <div class="trimg">
+                        <img src="photos/aeroplane.png" alt="travelimage">
+                    </div>
+                    <h3>By Air</h3>
+                    <p>The nearby domestic airport is at Bellary which is located about 60 km from Hampi.
+                        The closest international airport is at Bengaluru which is at 350 km distance. Cabs, taxis,
+                        KSRTC buses commute to the site of the World heritage monuments </p>
+                </div>
+                <div class="travel">
+                    <div class="trimg">
+                        <img src="photos/train1.jpg" alt="travelimage">
+                    </div>
+                    <h3>By Rail</h3>
+                    <p>Hospet is the nearest railway station, 13 kilometers away.
+                        The railhead is located on important rails crisscrossing the country.
+                        From the railhead, the site of the world heritage monuments can be reached by taxis, buses and
+                        cabs </p>
+                </div>
+                <div class="travel">
+                    <div class="trimg">
+                        <img src="photos/roadimg.png" alt="travelimage">
+                    </div>
+                    <h3>By Road</h3>
+                    <p> Hampi is well connected by road to important cities. KSRTC buses link the world heritage site to
+                        numerous places.
+                        Private cabs, AC buses, normal buses, etc all connect to the city. </p>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30782.38692087784!2d76.44586798326898!3d15.333189171042326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb77fd95d4be823%3A0x6e52e05076df36b8!2sHampi%2C%20Karnataka%20583239!5e0!3m2!1sen!2sin!4v1647493941138!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+</html>

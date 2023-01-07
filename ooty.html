@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ooty</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+         html {
+            scroll-behavior: smooth;
+        }
+        
+        .menu ul li a{
+         color: black;
+         }
+
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+
+        .new img {
+            padding-left: 30px;
+            padding-top: 30px;
+
+        }
+        .srch{
+            border: 1px solid black;
+            color: black;
+        }
+        .btn{
+            border: 2px solid black;
+            color: black;
+        }
+        .bar {
+            display: inline;
+            padding: 6px;
+            margin-left: 80px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+
+
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div class="navbar">
+        <div class="icon">
+            <a href="index.html"> 
+                <img src="photos/logob.png" width="130px" height="130px">
+            </a>
+        </div>
+
+        <div class="menu">
+            <!--menu bar-->
+            <ul>
+
+                <li><a href="about.html"></i>About Us</a></li>
+                <li><a>Destination</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="North.html" target="_blank">North</a></li>
+                            <li><a href="South.html" target="_blank">South</a></li>
+                            <li><a href="East.html" target="_blank">East</a></li>
+                            <li><a href="West.html" target="_blank">West</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="review.html">Review</a></li>
+
+
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+            <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                           d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg> </button></a>
+                    <script>
+                        function openPage() {
+                            var x = document.getElementById("search").value;
+                            if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                            if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                            if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                            if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                            if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                            if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                            if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                            if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                            if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                            if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                            if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                            if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                            if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                            if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                            if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                            if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                            if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                            if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                            if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                            if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                            if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                            if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                            if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                            if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                            if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                            if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                            if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                            if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                            if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                            if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                            if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                            if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                            if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                            if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                            if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                            if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                            if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                            if (x === "") { window.open(".html") };
+
+
+
+                        }
+                    </script>
+
+        </div>
+    </div>
+        <br>
+    <div class="new">
+
+        <section><img src="photos/ooty.jpg" width="1000px" height="600px" ALIGN="left"><br><br><br><br><br><br><br><br><br><br>
+            <h1 ALIGN="right"><pre>         Ooty</h1>
+            <h2>Tamil Nadu</h2>
+        </section>
+        <br>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a class="bar" href="#aboutthecity">About the city</a>
+        <!-- <a class="bar" href="#bestexperience">Best Experiences</a> -->
+        <a class="bar" href="#besttimetovisit">Best time to visit</a>
+        <!-- <a class="bar" href="#idealduration">Ideal Duration</a> -->
+     
+        <a class="bar" href="#thingstodo">Things To do</a>
+        <a class="bar" href="#placestostay">Places to stay</a>   
+        <a class="bar" href="#howtoreach">How to Reach</a>
+
+
+        <section>
+            <br>
+            <br>
+            <div class="scroll" id="aboutthecity">
+
+           
+            <p><br><b><h2>About The City</h2></b><br>
+                <p>
+                Ooty is amongst the best hill stations in south India. It is popular for those who seek the beauty of nature, relax and take part in activities that could add new experiences to their travel diaries.
+
+                <br>Ooty , officially known as Udhagamandalam (also known as Ootacamund (audio speaker iconlisten, is a city and a municipality in the Nilgiris district of the Indian state of Tamil Nadu. 
+                <br>It is located 86 km (53 mi) north west of Coimbatore and 128 km (80 mi) south of Mysore and is the headquarters of the Nilgiris district.
+                <br> It is a popular hill station located in the Nilgiri Hills. It is called Queen of Western Ghats. It was the summer capital of Madras Presidency.
+                 </p>
+            </p>
+        </div>
+    
+
+            <!-- <div class="scroll" id="bestexperience">
+
+            
+            <p><br>
+            <h2><b>Best Experiences</h2></b><br>
+            <p>Explore the cozy cottages and go for trekking along the plantation sites for breathtaking views. You could indulge in adventurous activities like angling and hand gliding too.</p>
+            </p><br>
+        </div> -->
+        <br>
+
+            <div class="scroll" id="besttimetovisit">
+
+            
+            <p><br>
+            <h2><b>Best Time To Visit</h2></b><br>
+            <p>October to June
+                <br>Ooty features a subtropical highland climate (Cwb) under Köppen climate classification.
+                <br> Despite its location in the tropics, in contrast with most of South India, Ooty generally features mild conditions and is spring-like throughout the year.
+                <br> However, night time in the months of January and February is typically cold. Temperatures are relatively consistent throughout the year; with average high temperatures ranging from about 17–20 °C (63–68 °F) and average low temperatures between approximately 5–12 °C (41–54 °F).
+                <br>Visit Ooty for 3 days for a good trip.
+            </p>
+            </p>
+        </div>
+        <br>
+<!-- 
+            <div class="scroll" id="idealduratio">
+            <p><br>
+            <h2><b>Ideal Duration</h2></b><br>
+            <p>Visit Ooty for 3 days for a good trip.</p>
+            </p><br>
+        </div> -->
+        
+
+            <!-- <div class="scroll" id="howtoreach">
+            <p><br>
+            <h2><b>How To Reach</h2></b><br>
+            <p> The Coimbatore international airport is the closest. Nilgiri express leaves from Chennai to Mettupalayam near Ooty. Buses and shared taxis are available.</p>
+            </p>
+        </div>
+        <br> -->
+
+            <div class="scroll" id="thingstodo">
+            <p><br>
+            <h2><b>Things To Do</h2></b><br>
+            <p>Explore the cozy cottages and go for trekking along the plantation sites for breathtaking views. You could indulge in adventurous activities like angling and hand gliding too.
+               <br> Visit Botanical Gardens
+                <br>The Government Rose Garden (formerly Centenary Rose Park)is the largest rose garden in India. It is situated on the slopes of the Elk Hill in Vijayanagaram of Ooty town. at an altitude of 2,200 metres (7,200 ft).
+
+               <br> Ooty lake covers an area of 26 hectares (65 acres).[34] The boat house established alongside the lake, which offers boating facilities to tourists, is a major tourist attraction in Ooty. 
+
+               <br> There are a few Toda huts on the hills above the Botanical Garden, where Todas still dwell. There are other Toda settlements in the area, notably Kandal Mund near Old Ooty. 
+
+                T<br>he Nilgiri Mountain Railway was built by the British in 1908,[47] and was initially operated by the Madras Railway Company. The railway still relies on its fleet of steam locomotives.
+
+                <br>Spread over an area of nearly zero point four zero hectares (one acre) of land, the Ooty Tea Factory is situated close to Ooty town. Visitors can learn about the origin of different kinds of tea leaves all across the globe and the history of tea in India.
+            </p>
+            </p><br>
+        </div>
+        <br>
+
+            <div class="scroll" id="placestostay">
+            <p><br>
+            <h2><b>Places To Stay</h2></b><br>
+            <p>Ooty White House, Greenwood Bungalow, Fortune Retreats , The Red House</p>
+            </p><br>
+        </div><br>
+        <div class="scroll" id="howtoreach">
+            <p><br>
+            <h2><b>How To Reach</h2></b><br>
+            <p> The Coimbatore international airport is the closest. Nilgiri express leaves from Chennai to Mettupalayam near Ooty. Buses and shared taxis are available.</p>
+            </p>
+        </div>
+        <br>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125150.10505087108!2d76.62355261652678!3d11.41184433766957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8bd84b5f3d78d%3A0x179bdb14c93e3f42!2sOoty%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1647494407610!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+            </div>  
+
+        </section>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

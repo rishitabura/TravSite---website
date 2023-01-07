@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Mumbai
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+        }
+
+        /* .img img{
+            padding-left: 150px;
+        } */
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            margin-left: 20px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+
+        }
+
+        .info p {
+            font-size: 20px;
+            color: black;
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div>
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="photos/logob.png" width="130px" height="130px">
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <ul>
+
+                    <li><a href="about.html"></i>About Us</a></li>
+                    <li><a>Destination</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="North.html" target="_blank">North</a></li>
+                                <li><a href="South.html" target="_blank">South</a></li>
+                                <li><a href="East.html" target="_blank">East</a></li>
+                                <li><a href="West.html" target="_blank">West</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="review.html">Review</a></li>
+
+
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </button></a>
+                <script>
+                    function openPage() {
+                        var x = document.getElementById("search").value;
+                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                        if (x === "") { window.open(".html") };
+
+
+
+                    }
+                </script>
+
+            </div>
+        </div>
+        <br>
+        <section>
+            <br><br>
+
+            <div class="mumbai">
+                <img src="photos/mumbai1.jpg" width="1000px" height="600px"
+                    ALIGN="left"><br><br><br><br><br><br><br><br><br><br>
+                <h1 ALIGN="RIGHT">
+                    Mumbai
+                </h1>
+                <h3>Maharashtra</h3>
+                <br>
+                <br>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <a class="bar" href="#1">About the city</a>
+                <a class="bar" href="#2">Places to visit</a>
+                <a class="bar" href="#3">About food</a>
+                <a class="bar" href="#7">Places to Stay</a>
+                <a class="bar" href="#4">Transportation</a>
+                <a class="bar" href="#5">Best time to visit</a>
+                <a class="bar" href="#6">Map</a>
+
+
+                <br><br><br><br><br>
+                <div class="info">
+                    <div class="scroll" id="1">
+
+                        <h2>About the city</h2>
+
+                        <p>
+
+
+                            Also known as bombay is the capital city of the Indian state of Maharashtra and the
+                            financial centre of India.
+                            According to the united nation, as of 2018, Mumbai is the second most populated city in
+                            India after Delhi and the eighth
+                            most populous city in the world with a population of roughly 2 crore (20 million). As per
+                            the Indian government population
+                            census of 2011, Mumbai was the most populous city in India with an estimated city proper
+                            population of 1.25 crore (12.5 million)
+                            living under the Municipal Corporation of Greater Mumbai. Mumbai is the centre of the Mumbai
+                            Metropolitan Region, the sixth
+                            most populous metropolitan area in the world with a population of over 2.3 crore (23
+                            million).[20] Mumbai lies on the Konkan
+                            coast on the west coast of India and has a deep natural harbour. In 2008, Mumbai was named
+                            an alpha world city. Mumbai is home
+                            to three UNESCO World Heritage Sites: the Elephanta Caves, Chhatrapati Shivaji Maharaj
+                            Terminus, and the city's distinctive
+                            ensemble of Victorian and Art Deco buildings designed in the 19th and 20th centuries.
+                        </p>
+                    </div>
+                    <br><br>
+
+                    <div class="scroll" id="2">
+                        <h2>Places to visit</h2>
+                        <br><br>
+                        <h2>Gateway of india</h2><br>
+                        <div class="img"><img src="photos/gate1.jpg" width="1300px" height="700px" ALIGN="center"><br><br></div>
+                        <p>The Gateway of India is one of India's most unique landmarks situated in the city of Mumbai.
+                            The colossal structure
+                            waRajabai Tower is a famous clock tower located in South Mumbai. It stands in Mumbai
+                            University Fort Campus located next
+                            to the High Court. The tower is, undoubtedly, an example of exquisite beauty. <br>It has
+                            become one of the major tourist
+                            destinations in Mumbai. The tower was built by Sir Gilbert Scott, who modeled it on the Big
+                            Ben, a clock tower in London.
+                            The foundation stone of the tower was laid down on March 1869.<br> The majestic tower holds
+                            a big clock which can be viewed
+                            from a distance. The clock also plays melodic tunes at fixed intervals. The tower has many
+                            impressive features and has
+                            been beautifully embellished with oriental figures. <br>If you are on a tour to Mumbai, do
+                            not miss a visit to this place. The Gateway of India is a monument that marks India's chief
+                            ports and is a major
+                            tourist attraction for visitors who arrive in India for the first time. At one point of
+                            time, this monument represented
+                            Shree Siddhivinayak temple which is located at Prabhadevi is very famous and favourite as
+                            Desire Fulfilling Shrine of Greater Mumbai.
+                            <br>This ancient shrine is a place of worship for finding solace for its devotees and the
+                            pilgrims all over the globe. It was on the
+                            Kartik Shuddha Chaturdashi of the Shalivahan Samvatsar 1723 as per the Hindu calendar year
+                            (A.D. 1801) that it’s first renovation
+                            was done, performing all rituals as per the Hindu religious commandment. It appears from
+                            available sources of information and it is
+                            evident that the shrine exists here since last 200 years.an government.
+                        </p><br>
+                        <h2>Marine drive</h2><br>
+                        <div class="img"><img src="photos/marinedrive.jpg" width="1300px" height="700px" ALIGN="center" padding-left="150px"><br><br></div>
+                        <p>Marine Drive is the most easily identifiable landmark associated with Mumbai and is
+                            indicative of the glamor and glitter
+                            of the city. <br>It is essentially 3.6 km long, arc-shaped boulevard along the South Mumbai
+                            coast that starts at the southern
+                            end of Nariman Point and ends at Girgaum Chowpatty, popularly known as Chowpatty Beach.<br>
+                            The coast wraps the Arabian sea
+                            Mumbai, the city of dreams, is truly a magical place for not just aspirers but for foodies
+                            also.
+                            <br>Vada Pav, Misal Pav,Pav Bhaaji,Bhel Puri and Sev Puri, Batata Vada, Ragda Pattice,
+                            Bombay Sandwich,Akuri On Toast,Baida Roti,Frankie
+                            this are some most favourite.
+                            or night.<br> At night, when the whole coastline lights up, it justifies its other moniker
+                            i.e. Queen's Necklace.
+                        </p><br>
+                        <h2>Elephanta caves</h2><br>
+                        <div class="img"><img src="photos/elephanta caves.jpg" width="1300px" height="700px" ALIGN="center"><br><br></div>
+                        <p>The Elephanta Caves are located on Elephanta Island in Mumbai also known as Gharapuri island.
+                            The Elephanta island is the
+                            glorious abode of Lord Shiva and an epitome of Hindu cave culture,<br> consists of seven
+                            caves on an island in the Sea of
+                            Oman close to Mumbai.There are two groups of caves on Elephanta Island (two hillocks
+                            separated by a narrow valley).<br>To the east,
+                            there is a Stupa Hill (thus named because of ancient Buddhist stupa mounds at the top)
+                            contains two caves, one of
+                            which is unfinished, and several cisterns.<br> The larger group, to the west, consists of
+                            five rock-cut Hindu shrines. Each cave has been carved as a rock-cut temple with one main
+                            huge chamber, courtyards, two lateral chambers, and minor shrines.</p><br>
+                        <h2>Rajabai clock tower</h2><br></div>
+                        <div class="img"><img src="photos/Rajabaitower.jpg" width="1300px" height="700px" ALIGN="center"><br><br>
+                        <p>Rajabai Tower is a famous clock tower located in South Mumbai. It stands in Mumbai University
+                            Fort Campus located next to the High Court.
+                            <br>The tower is, undoubtedly, an example of exquisite beauty. It has become one of the
+                            major tourist destinations in Mumbai.
+                            <br>The tower was built by Sir Gilbert Scott, who modeled it on the Big Ben, a clock tower
+                            in London. The foundation stone of the tower was laid down on March 1869. The majestic tower
+                            holds a big clock which can be viewed from a distance. The clock also plays melodic tunes at
+                            fixed intervals. The tower has many impressive features and has been beautifully embellished
+                            with oriental figures. If you are on a tour to Mumbai, do not miss a visit to this place.
+                        </p><br>
+                        <h2>Siddhivinayak temple</h2><br>
+                        <div class="img"><img src="photos/Siddhivinayak Temple.jpg" width="1300px" height="700px" ALIGN="center"><br><br>
+                        <p>Shree Siddhivinayak temple which is located at Prabhadevi is very famous and favourite as
+                            Desire Fulfilling Shrine of Greater Mumbai. This ancient shrine is a place of worship for
+                            finding solace for its devotees and the pilgrims all over the globe. It was on the Kartik
+                            Shuddha Chaturdashi of the Shalivahan Samvatsar 1723 as per the Hindu calendar year (A.D.
+                            1801) that it’s first renovation was done, performing all rituals as per the Hindu religious
+                            commandment. It appears from available sources of information and it is evident that the
+                            shrine exists here since last 200 years.</p>
+                        <br>
+                    </div>
+                    <br>
+                    <div class="scroll" id="5">
+                        <h2>Best time to Visit</h2>
+                        <br>
+                        <p>
+                            Mumbai in Winter (October- February) Winter is the best time to visit Mumbai. October is an
+                            ideal month for visiting the city because the weather is pleasant for sightseeing and
+                            outdoor activities.
+                        </p>
+                    </div>
+                    <br>
+
+
+                    <div class="scroll" id="3">
+                        <br>
+                        <h2>About Food</h2>
+                        <p>
+                            Mumbai, the city of dreams, is truly a magical place for not just aspirers but for foodies
+                            also.
+                            Vada Pav, Misal Pav,Pav Bhaaji,Bhel Puri and Sev Puri, Batata Vada, Ragda Pattice, Bombay
+                            Sandwich,Akuri On Toast,Baida Roti,Frankie.
+
+                        </p>
+                        <br>
+                    </div>
+
+
+                    <!-- <div class="scroll" id="4">
+                <h2>Transportation Facility</h2>
+                <br>
+                <ul>
+                <li>
+                    
+                    <h3>BY AIR</h3>
+                <p>
+                    The nearest airport to Mumbai is Mumbai (BOM). Mumbai Suburban Railway operates a train from Vile Parle to Elphinstone Road every 10 minutes. Mumbai Domestic Airport is the Terminal 1 of Chhatrapati Shivaji International Airport. Located in the Santa Cruz Area.
+                </p>
+                <br>
+                </li>
+                <li><h3>By RAIL</h3>
+                <p>
+                    Mumbai Central Railway station is in Mumbai Suburban district making it an important railway station in the Indian state of Maharashtra. The station code name of Mumbai Central is ‘MMCT’.
+                </p>
+                <br>
+                </li>
+                <li><h3>BY ROAD</h3> 
+                <p>
+                    Public transport in Mumbai involves the transport of millions of its citizens by train, road, and water. Over 88% of the commuters in Mumbai use public transport.    
+      
+                </p>
+                <br>
+                </li></ul>
+
+            </div> -->
+
+                    <div class="scroll" id="7">
+                        <br>
+
+                        <p>
+                        <h2>Places to stay</h2><br>
+                        <p>Being the Economical Capital of the country, Mumbai is flooded with the accomodations
+                            facilities which includesthe following options:<br>
+                            1.Sahara Star<br>
+                            2.JW Marriot Mumbai Juhu <br>
+                            3.Trident Nariman Point<br>
+                            4.The Oberoi<br>
+                            5.The Taj Mahal Tower Mumbai <br>
+                            6.Trident Bandra Kurla<br>
+                        </p>
+                        </p>
+                        <br>
+                        <!-- <hr> -->
+
+
+                    </div>
+
+                    <div class="scroll" id="4">
+                        <h2>Transportation Facility</h2>
+                        <br>
+                        <div class="transport">
+                            <div class="travel">
+                                <div class="trimg">
+                                    <img src="photos/aeroplane.png" alt="travelimage">
+                                </div>
+                                <h3>By Air</h3>
+                                <p>
+                                    The nearest airport to Mumbai is Mumbai (BOM). Mumbai Suburban Railway operates a
+                                    train from Vile Parle to
+                                    Elphinstone Road every 10 minutes. Mumbai Domestic Airport is the Terminal 1 of
+                                    Chhatrapati Shivaji International Airport. Located in the Santa Cruz Area. </p>
+                            </div>
+                            <div class="travel">
+                                <div class="trimg">
+                                    <img src="photos/train1.jpg" alt="travelimage">
+                                </div>
+                                <h3>By Rail</h3>
+                                <p>
+                                    Mumbai Central Railway station is in Mumbai Suburban district making it an important
+                                    railway station in the
+                                    Indian state of Maharashtra. The station code name of Mumbai Central is ‘MMCT’.</p>
+                            </div>
+                            <div class="travel">
+                                <div class="trimg">
+                                    <img src="photos/roadimg.png" alt="travelimage">
+                                </div>
+                                <h3>By Road</h3>
+                                <p>
+                                    Public transport in Mumbai involves the transport of millions of its citizens by
+                                    train, road, and water. Over 88% of the commuters in Mumbai use public transport.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="scroll" id="5">
+                <h2>Best time to Visit</h2>
+                <br>
+                <p>
+                    Mumbai in Winter (October- February) Winter is the best time to visit Mumbai. October is an ideal month for visiting the city because the weather is pleasant for sightseeing and outdoor activities.
+                </p>
+            </div> -->
+
+
+
+                    <!-- <div class="scroll" id="7">
+                <br>
+                <h2>Places to Stay</h2>
+                <p>
+                    Being the Economical Capital of the country, Mumbai is flooded with the accomodations facilities which includesthe following options:
+
+                </p>
+                <br>
+                </div> -->
+
+                    <div class="scroll" id="6">
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609852343!2d72.74109969302641!3d19.082197839382733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1647493034296!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

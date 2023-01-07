@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Agra Fort
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        .agrafort p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+            
+        
+        }
+
+        .menu ul li a{
+            color: black;
+
+        }
+        
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+        .agrafort img{
+         padding-left: 30px;
+         padding-top: 30px;
+        }
+
+        .navbar{
+            color: black;
+        }
+        .srch{
+            border: 1px solid black;
+            color: black;
+        }
+        .btn{
+            border: 2px solid black;
+            color: black;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .scroll h2 {
+            color: black;
+
+        }
+        .infoone{
+            font-size: 25px;
+        }
+        .infoone p{
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+
+        }
+        .infoone img{
+            padding-left: 250px;
+            
+        }
+        .besttime{
+            color: black;
+            font-size: 25px;
+        }
+        .besttime p{
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+
+        }
+        .show{
+            color: black;
+            font-size: 25px;
+        }
+        .show p{
+            text-align: center;
+            font-size: 20px;
+            color: rgb(85, 78, 78);
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        ul li a:hover{
+    color: rgb(219, 98, 154);
+    text-decoration: underline;
+    padding-bottom: 5px;
+    text-decoration-color: rgb(219, 98, 154);
+    
+    
+  }
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: rgb(0, 0, 0);
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 120px;
+
+        }
+    </style>
+
+</head>
+           <body  bgcolor="#F5CEC7">
+            
+                <div class="navbar">
+                    <div class="icon">
+                        <a href="index.html">
+                            <img src="photos/logob.png" width="130px" height="130px">
+                    </a>
+                    </div>
+    
+                    <div class="menu">
+                        <!--menu bar-->
+                        <ul>
+    
+                            <li><a href="about.html"></i>About Us</a></li>
+                            <li><a>Destination</a>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="North.html" target="_blank">North</a></li>
+                                        <li><a href="South.html" target="_blank">South</a></li>
+                                        <li><a href="East.html" target="_blank">East</a></li>
+                                        <li><a href="West.html" target="_blank">West</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="review.html">Review</a></li>
+    
+    
+                        </ul>
+                    </div>
+                    <div class="search" >
+                        <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                        <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                       d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg> </button></a>
+                                <script>
+                                    function openPage() {
+                                        var x = document.getElementById("search").value;
+                                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+            
+                                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+            
+                                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+            
+                                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+            
+            
+                                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+            
+                                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                                        if (x === "") { window.open(".html") };
+            
+            
+            
+                                    }
+                                </script>
+            
+                    </div>
+                </div>
+                    <br>
+
+            <section>
+
+             
+            <div class="agrafort" >
+                <img src="photos/Agra fort.jpg" width="1000px" height="600px" ALIGN="left" ><br><br><br><br><br><br><br><br><br><br>
+                   <h1 ALIGN="right">
+                    <pre>     Agra Fort</pre>
+                   </h1>
+                   
+                 <h2>Delhi</h2>
+                 <br>
+                 <br>
+                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                 <br>
+              
+                 <a class="bar" href="#abouttheplace">About the place</a>
+                 <a class="bar" href="#thingstosee">Things to see</a>
+                 <a class="bar" href="#besttimetovisit">Best time to visit</a>
+                 <a class="bar" href="#transportation">Transportation</a>
+                
+       
+        <br><br><br>
+       
+               
+               
+                <div class="scroll" id="abouttheplace">
+                    <br>
+                        <h2>About the place</h2>
+                        <br>
+                       <p>Agra Fort, also called Red Fort, large 16th-century fortress of red sandstone located on the Yamuna River in the histric city of Agra, west-central Uttar Pradesh, north-central India.
+                        <br>It was established by the Mughal emperor Akbar and, in its capacity as both a military base and a royal residence, served as the seat of government when the Mughal capital was in Agra. 
+                        <br>The structure, a contemporary of Humāyūn’s Tomb in Delhi (about 125 miles [200 km] to the northwest), reflects the architectural grandeur of the Mughal reign in India. 
+                        The fort complex was designated a UNESCO World Heritage site in 1983.
+                        <br>
+                        <br>            
+                    </p>
+                </div>
+                <br>
+            
+                <br>
+                <div class="scroll" id="thingstosee">
+                    <h2>Agra Fort Light and Sound Show</h2>
+                    <br>
+                    <p>
+                        The Government of UP organizes an evening light and sound show at the fort. 
+                        <br>The light and sound show at the Agra Fort takes you on a visual journey through its illustrious past. 
+                        Counted among the best light and sound shows in India, it is one of the top attractions in Agra Fort.
+                        <br>Timings: 30 minutes after sunset; every day
+                        <br>Shows: Hindi and English
+                       <br>Tickets: ₹ 70 for Indians; ₹ 200 for foreigners; ₹ 40 for students
+                    </p>
+                </div>
+                <br><br>
+                <div class="'scroll" id="besttimetovisit">
+                   <div class="besttime"> 
+                    
+                     <h2>Best Time to Visit</h2>
+                     <br>
+                     <p>The best time to visit Agra is in the winter season between November to March when the weather is perfect for sightseeing. 
+                        Another good time to visit Agra is between August and October to witness the Taj Mahal at its best. 
+                         <br>April-June is the summer season in Agra which is scorching hot and not a good time to visit.
+                         <br> July-September is the monsoon season in Agra when the weather can get humid at times.
+                     </p>
+                    </div>
+                </div>
+                <br> <br>
+                <div class="scroll" id="transportation">
+                    <h2>Transportation</h2>
+                  
+                    <div class="transport">
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/aeroplane.png" alt="travelimage">
+                            </div>
+                            <h3>By Air</h3>
+                            <p>The nearest international airport is the IGI Airport of New Delhi, 200 km away from Agra. Tourists can avail attractive flight deals  from Agra.
+                                 </p>
+                        </div>
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/train1.jpg" alt="travelimage">
+                            </div>
+                            <h3>By Rail</h3>
+                            <p>Agra has three main railway stations which are Agra Cantt, Agra Fort, and Raja Ki Mandi.
+                                Agra Fort are a short distance away from Agra Cantt railway station and one can hire a pre-paid taxi, 
+                                auto rickshaw or even a cycle rickshaw to get to these attraction. </p>
+                        </div>
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/roadimg.png" alt="travelimage">
+                            </div>
+                            <h3>By Road</h3>
+                            <p> Agra is connected to Delhi, Jaipur, Lucknow and other nearby cities by road. 
+                                Tourists can either book taxis or take a bus to reach Agra. </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="scroll" id="transportation">
+                    <hr>
+                    <br>
+                    <br>
+                    <br>
+                    <h2>Transportation</h2>
+                    <br>
+                    <p>
+                        By air
+The Tiruchirappalli International Airport, the Chennai International Airport, and the Coimbatore International Airport this airports are near the chola temple's.
+<br>
+<br>
+<h3>By train 🚆</h3>
+<br>
+<p>The Trichy Junction is a major railway station in the area and there are regular trains to other places in Tamil Nadu and the rest of India. And the Thanjavur Railway Station  is nearest to  chola temple's.</p>
+<br><br>
+<h3>By road </h3>
+<br>
+
+<p>Some of the bus routes available to reach these temples include national highways, local roads, and state highways. And There are cab and auto options in the area and the Thanjavur New Bus Stand</p>
+                    </p>
+                    
+                </div>
+            </div>
+                
+                
+            </div> -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7098.505755303782!2d78.02026557507139!3d27.17978783205314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397470d491343beb%3A0x640a5ccc94029576!2sAgra%20Fort!5e0!3m2!1sen!2sin!4v1647493518472!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+
+
+            </section>
+
+
+            
+    
+    
+
+
+
+
+
+
+    </html>

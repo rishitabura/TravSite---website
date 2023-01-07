@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mahabaleshwar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+
+        .new img {
+            padding-left: 30px;
+            padding-top: 30px;
+
+        }
+
+
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            margin-left: 80px;
+            color: black;
+            align-items: center;
+            padding-left: 5px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+
+
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div class="navbar">
+        <div class="icon">
+
+            <a href="index.html">
+                <img src="photos/logob.png" width="130px" height="130px">
+            </a>
+
+        </div>
+
+        <div class="menu">
+            <!--menu bar-->
+            <ul>
+
+                <li><a href="about.html"></i>About Us</a></li>
+                <li><a>Destination</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="North.html" target="_blank">North</a></li>
+                            <li><a href="South.html" target="_blank">South</a></li>
+                            <li><a href="East.html" target="_blank">East</a></li>
+                            <li><a href="West.html" target="_blank">West</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="review.html">Review</a></li>
+
+
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+            <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg> </button></a>
+            <script>
+                function openPage() {
+                    var x = document.getElementById("search").value;
+                    if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                    if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                    if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                    if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                    if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                    if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                    if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                    if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                    if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                    if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                    if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                    if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                    if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                    if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                    if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                    if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                    if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                    if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                    if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                    if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                    if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                    if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                    if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                    if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                    if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                    if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                    if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                    if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                    if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                    if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                    if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                    if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                    if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                    if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                    if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                    if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                    if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                    if (x === "") { window.open(".html") };
+
+
+
+                }
+            </script>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="new">
+
+        <section><img src="photos/mahabaleshwar.jpg" width="1000px" height="600px"
+                ALIGN="left"><br><br><br><br><br><br><br><br><br><br>
+            <h1 ALIGN="right">
+                <pre>         Mahabaleshwar</h1>
+            <h3>Maharashtra</h3>
+
+        </section>
+
+        <br>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a class="bar" href="#aboutthecity">About the city</a>
+        <!-- <a class="bar" href="#bestexperience">Best Experiences</a> -->
+        <a class="bar" href="#besttimetovisit">Best time to visit</a>
+        <!-- <a class="bar" href="#idealduration">Ideal Duration</a> -->
+        
+        <a class="bar" href="#thingstodo">Things To do</a>
+        <a class="bar" href="#placestostay">Places to stay</a>
+        <a class="bar" href="#howtoreach">Transportation</a>
+        
+        
+
+
+<br><br><br>
+       
+        <div class="scroll" id="aboutthecity">
+            <br>
+            <p><br><h2>About the city</h2><p><br>
+                Mahabaleshwar (audio speaker iconpronunciation is a small town, a hill station and a municipal council in Satara district in the Indian state of Maharashtra. It is a place of pilgrimage for Hindus because Krishna river has its origin here. The British colonial rulers developed this town as a hill station, and served as the summer capital of Bombay Presidency during the British Raj.
+                Mahabaleshwar is a popular hill station in west India. It has unique sights to offer with historical
+                stories that could make your trip insightful & full of fun.
+                It is also the oldest hill station with an array of sightseeing opportunities like fresh climate,
+                mountains and valleys. It's among the best hill stations to
+                visit in India for its beauty and charm.</p>
+
+            </p><br>
+           <br>
+
+        </div>
+
+
+        
+        <!-- <div class="scroll" id="bestexperience">
+            <br><br>
+
+            <p>
+            <h2>Best Experiences</h2><br>
+            <p> Mahabaleshwar is famous for strawberries. Don't forget to try them on your visit here.
+                Indulge in lots of activities like boating, horse riding.</p>
+            </p><br>
+            <br>
+
+        </div> -->
+        
+        <div class="scroll" id="besttimetovisit">
+            <br>
+
+            <p>
+            <h2>Best Time To Visit</h2><br>
+            <p> March to June 
+                Mahabaleshwar has a borderline tropical monsoon/humid subtropical climate. Very heavy rainfall is a normal occurrence during monsoons. During July, 10–12 days of continuous rains with 100 to 200 millimetres or 4 to 8 inches each day occur each year. There were reports of ice and ground frost formation around Venna Lake in 2018. On August 7, 2019 Mahabaleshwar recorded 330 millimetres or 12.99 inches of rain in 24 hours causing landslides. Mahabaleshwar has been described as the "New Candidate for the wettest place in the world", the title currently held by Cherrapunji.
+
+                Plan a trip here for 3 days.
+            </p>
+            </p><br>
+            <br>
+
+        </div>
+        <div class="scroll" id="thingstodo">
+            <br>
+            <p><br><h2>Things To Do</h2><br>
+            <p>Ride A Shikara, Jungle Trekking.
+
+                <br>Mahabaleshwar is famous for strawberries. Don't forget to try them on your visit here.
+                <br>Indulge in lots of activities like boating, horse riding.
+
+                <br>Behind Panchganga temple, there is a small trail that leads to Krishnabai temple believed to be the source of the river. It is built on the hilltop overlooking the Krishna valley and was built in 1888.
+
+                <br>The Venna lake is one of the tourist attractions of Mahabaleshwar. The lake is surrounded by trees.
+
+                <br>Kate's point is located to the east of Mahabaleshwar and is famous for its view of two reservoirs, Balakwadi and Dhom. The point is around 1,280 m high.
+            </p>
+            </p><br>
+           <br>
+
+        </div>
+        <br>
+        <div class="scroll" id="placestostay">
+            <br>
+
+            <p>
+            <h2>Places To Stay</h2><br>
+            <p>Le Méridien Mahabaleshwar Resort & Spa, Gavson Palace,
+                FabExpress Sagar villa Panchgani, Evershine Keys Resort</p>
+            </p><br>
+            
+
+
+        </div>
+
+        <!-- <div class="scroll" id="idealduration">
+            <br><br>
+
+            <p>
+            <h2>Ideal Duration</h2><br>
+            <p>Plan a trip here for 3 days.</p>
+            </p><br>
+            <br>
+
+        </div> -->
+
+        <!-- <p>Mahabaleshwar is 263 Km from Mumbai and the journey takes around 5 hours via local transportation.
+                Train services are also available with the nearest station being at Satara. -->
+
+        <!-- <div class="scroll" id="howtoreach">
+            <br><br>
+
+            <p>
+            <h2>How To Reach</h2><br>
+            
+          <p> 
+            Road-
+                Mahabaleshwar is 32 km from Wai. It is 260 km from Mumbai, the state capital. The nearest major city is Satara, 45 km and it is 120 km from Pune and 263 km from Mumbai thane Mahabaleshwar is connected by the National Highway 4. Bus services by state-run MSRTC and private organizations connect it to Pune, Mumbai, Sangli and Satara.
+
+            Rail-
+                Nearest railroad is Satara, 60 km. Nearby major railway junctions include Pune (120 km), and Miraj (170 km) . State-run bus services are available in these locations to Mahabaleshwar. Rail station Diwan Khavati on Kokan Railway near Khed gives a route of 60 km via Poladpur to Mahabaleshwar.
+
+            Air-
+                The nearest airport is Pune International Airport, serving the city of Pune, 120 km from Mahabaleshwar. Chhatrapati Shivaji Maharaj International Airport of Mumbai is 270 km.
+            </p> 
+            
+            </p>
+            <br>
+
+
+        </div> -->
+
+        <div class="scroll" id="howtoreach">
+            <h2>Transportation Facility</h2>
+            <br>
+            <div class="transport">
+                <div class="travel">
+                    <div class="trimg">
+                        <img src="photos/aeroplane.png" alt="travelimage">
+                    </div>    
+                    <h3>By Air</h3>
+                    <p>
+                        The nearest airport is Pune International Airport, serving the city of Pune, 120 km from Mahabaleshwar. Chhatrapati Shivaji Maharaj International Airport of Mumbai is 270 km. </p>
+                </div>
+                <div class="travel">
+                    <div class="trimg">
+                        <img src="photos/train1.jpg" alt="travelimage">
+                    </div>
+                    <h3>By Rail</h3>
+                    <p>
+                        Nearest railroad is Satara, 60 km. Nearby major railway junctions include Pune (120 km), and Miraj (170 km) . State-run bus services are available in these locations to Mahabaleshwar. Rail station Diwan Khavati on Kokan Railway near Khed gives a route of 60 km via Poladpur to Mahabaleshwar.
+                    </p>
+                </div>
+                <div class="travel">
+                    <div class="trimg">
+                        <img src="photos/roadimg.png" alt="travelimage">
+                    </div>
+                    <h3>By Road</h3>
+                    <p>
+                        Mahabaleshwar is 32 km from Wai. It is 260 km from Mumbai, the state capital. The nearest major city is Satara, 45 km and it is 120 km from Pune and 263 km from Mumbai thane Mahabaleshwar is connected by the National Highway 4. Bus services by state-run MSRTC and private organizations connect it to Pune, Mumbai, Sangli and Satara.
+ 
+                        </p>
+                </div>
+            </div>
+            </div>
+
+<!-- 
+        <div class="scroll" id="thingstodo">
+            <br>
+            <p><br><h2>Things To Do</h2><br>
+            <p>Ride A Shikara, Jungle Trekking.
+
+                Mahabaleshwar is famous for strawberries. Don't forget to try them on your visit here.
+                Indulge in lots of activities like boating, horse riding.
+
+                Behind Panchganga temple, there is a small trail that leads to Krishnabai temple believed to be the source of the river. It is built on the hilltop overlooking the Krishna valley and was built in 1888.
+
+                The Venna lake is one of the tourist attractions of Mahabaleshwar. The lake is surrounded by trees.
+
+                Kate's point is located to the east of Mahabaleshwar and is famous for its view of two reservoirs, Balakwadi and Dhom. The point is around 1,280 m high.
+            </p>
+            </p><br>
+           <br>
+
+        </div> -->
+
+        <!-- <div class="scroll" id="placestostay">
+            <br>
+
+            <p>
+            <h2>Places To Stay</h2><br>
+            <p>Le Méridien Mahabaleshwar Resort & Spa, Gavson Palace,
+                FabExpress Sagar villa Panchgani, Evershine Keys Resort</p>
+            </p><br>
+            <hr>
+
+
+        </div> -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121476.35198652571!2d73.57891280125521!3d17.92580962467568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2655313cba1bb%3A0xca8196c7aa20a0a8!2sMahabaleshwar%2C%20Maharashtra%20412806!5e0!3m2!1sen!2sin!4v1647494280559!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+        </div>  
+
+
+
+
+
+
+       
+    </div>
+
+
+
+
+
+</body>
+
+</html>

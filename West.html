@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+        West India
+
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        .mumbai p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+
+
+        }
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        .menu ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+        }
+
+        .mumbai img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div>
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="photos/logob.png" width="150px" height="150px">
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <ul>
+
+                    <li><a href="about.html"></i>About Us</a></li>
+                    <li><a>Destination</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="North.html" target="_blank">North</a></li>
+                                <li><a href="South.html" target="_blank">South</a></li>
+                                <li><a href="East.html" target="_blank">East</a></li>
+                                <li><a href="West.html" target="_blank">West</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="review.html">Review</a></li>
+
+
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </button></a>
+                <script>
+                    function openPage() {
+                        var x = document.getElementById("search").value;
+                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                        if (x === "") { window.open(".html") };
+
+
+
+                    }
+                </script>
+
+            </div>
+        </div>
+        <br>
+        <section class="hills">
+            <h1>West India</h1>
+
+            <br>
+            
+
+            <div class="container">
+
+
+
+                <div class="gallery">
+                    <a href="jaipur.html"><img src="photos/jaipur1.jpg">
+                        <div class="desc">
+                            <h1>Jaipur</h1>
+                            <h2>Rajasthan</h2>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="gallery">
+                    <a href="pune.html"> <img src="photos/pune1.jpg">
+                        <div class="desc">
+                            <h1>Pune</h1>
+                            <h2>Maharashtra</h2>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="gallery">
+                    <a href="mahabaleshwar.html"> <img src="photos/mahabaleshwar.jpg">
+                        <div class="desc">
+                            <h1>Mahabaleshwar</h1>
+                            <h2>Maharashtra</h2>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+                <div class="gallery">
+                    <a href="elephanta.html"> <img src="photos/elephanta caves.jpg">
+                        <div class="desc">
+                            <h1>Elephanta Caves</h1>
+                            <h2>Maharashtra</h2>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+
+                <div class="gallery">
+                    <a href="mumbai.html"> <img src="photos/mumbai1.jpg">
+                        <div class="desc">
+                            <h1>Mumbai</h1>
+                            <h2>Maharashtra</h2>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="gallery">
+                    <a href="ajanta.html"> <img src="photos/Ajanta caves.jpg">
+                        <div class="desc">
+                            <h1>Ajanta Ellora Caves</h1>
+                            <h2>Maharashtra</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery">
+                    <a href="amboli.html"> <img src="photos/amboli.jpg">
+                        <div class="desc">
+                            <h1>Amboli</h1>
+                            <h2>Maharashtra</h2>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery">
+                    <a href="ahmedabad.html"><img src="photos/ahmedabad1.jpg">
+                        <div class="desc">
+                            <h1>Ahmedabad</h1>
+                            <h2>Gujarat</h2>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+</body>
+
+</html>

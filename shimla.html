@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Shimla
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+   <style>
+        .shimla p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        
+        .shimla{
+            font-size: 25px;
+            color: black;
+        }
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        .shimla img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+        .photo img{
+            margin-left: 130px;
+            
+        }
+
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 40px;
+        }
+
+        .info p{
+            font-size: 20px;
+            color: black;
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+
+    </style>
+
+
+
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div>
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="photos/logob.png" width="130px" height="130px">
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <ul>
+
+                    <li><a href="about.html"></i>About Us</a></li>
+                    <li><a>Destination</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="North.html" target="_blank">North</a></li>
+                                <li><a href="South.html" target="_blank">South</a></li>
+                                <li><a href="East.html" target="_blank">East</a></li>
+                                <li><a href="West.html" target="_blank">West</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="review.html">Review</a></li>
+
+
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </button></a>
+                <script>
+                    function openPage() {
+                        var x = document.getElementById("search").value;
+                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                        if (x === "") { window.open(".html") };
+
+
+
+                    }
+                </script>
+
+            </div>
+        </div>
+        <br>
+        
+        <section>
+
+
+            <div class="shimla">
+                <img src="photos/shimla1.jpg" width="1000px" height="600px"
+                    ALIGN="left">
+                    <br><br><br><br><br><br><br>
+                <h1 ALIGN="RIGHT">
+                    <pre>    Shimla</pre>
+                </h1>
+                <h3>Himachal Pradesh</h3>
+                <br>
+                <br>
+                <br><br><br><br><br><br><br><br>
+               
+
+                <a class="bar" href="#1">About the city</a>
+                <a class="bar" href="#2">Places to visit</a>
+                <a class="bar" href="#5">Best time to visit</a>
+                <a class="bar" href="#3">About food</a>
+                <a class="bar" href="#4">Transportation facility</a>
+                
+                <a class="bar" href="#6">Map</a>
+<br><br><br> 
+                <div class="info">
+                <div class="scroll" id="1">
+                    <h2>About The City</h2>
+                    <p>
+                        Shimla; also known as Simla, the official name until 1972 is the capital and the largest city of the Northern Indian state of Himachal Pradesh. In 1864, Shimla was declared as the summer capital of British India. After independence, the city became the capital of East Punjab and was later made the capital city of Himachal Pradesh. 
+                        <br>
+                        It is the principal commercial, cultural and educational centre of the state. Most of the area occupied by present-day Shimla city was dense forest during the 18th century. The only sign of civilisation was the Jakhu Temple and a few scattered houses. The area was called 'Shimla', named after a Hindu goddess, Shyamala Devi, an incarnation of Kali.
+                    </p>
+                </div>
+                <br>
+                <div class="scroll" id="2">
+    
+                    <h2>Places to Visit</h2>
+                    <br>
+                    <h2>Mashobra</h2><br>
+                    <div class="photo"><img src="photos/Mashobra.jpg" width="1000px" height="700px" ALIGN="center"><br><br></div>
+                    <p>
+                        Located amidst the Reserve Forest Sanctuary of Shimla, Mashobra is a haven for all the peace-seeking souls. This is among the best places to visit in Shimla in December, thanks to many activities you can indulge in, such as skiing. Also, there are options for both luxury and budget homestays in Mashobra.       
+                    </p>
+    
+                    <br>
+                    <h2>Kufri – A Heaven In Shimla During Snowfall</h2><br>
+                    <div class="photo"><img src="photos/kufri.jpg" width="1000px" height="700px" ALIGN="center"><br><br></div>
+    
+                    <p>
+                        Though Kufri is 16 km away from the city of Shimla, it is counted among the top tourist attractions of Shimla. Kufri’s charm increases manifold in the winter season and thus it is one of the most beautiful places to visit near Shimla in December. The ski slopes and mesmerizing views from the ridge of Kufri are crowd pullers and tourists will get some of the best homestays in Kufri while on a trip to Shimla.        
+                    </p>
+                    <br>
+                    <h2>Narkanda – The Skiing Destination</h2><br>
+                    <div class="photo"><img src="photos/Narkanda.webp" width="1000px" height="700px" ALIGN="center"><br><br></div>
+    
+                    <p>
+                        A town in Shimla District that turns into a ski resort, Narkanda is located just 2-hours’ drive away from Shimla city. Since Narkanda is perched at a higher altitude than Shimla (7,400 feet), the panoramic views of the valley will captivate you. This is among the best places to visit in Shimla in December as HPDC conducts skiing courses here; they’ve have been doing the same since 1980. Also, owing to different slopes, Narkanda is perfect for everyone from beginners to experienced skiers.       
+                    </p>
+                    <br>
+                    <h2>Rohru – The Apple Orchard Master</h2><br>
+                    <div class="photo"><img src="photos/apple.jpg" width="1000px" height="700px" ALIGN="center"><br><br></div>
+      <br>
+                    <p>
+                        One of the lesser-known places to visit near Shimla in December, Rohru’s apple production is something that has created a buzz in whole of Himachal Pradesh. The town is located beside the Pabbar River, and trout fishing is a very popular activity here. If you visit this town in the first half of December, you can easily enjoy this activity, as after that the town gets whitewashed with snow. Alongside trout fishing, other activities one can enjoy during their stay in Rohru, such as hand gliding and trekking.     
+                    </p>
+                    <br>
+                    <h2>Shaily Peak</h2><br>
+                    <div class="photo"><img src="photos/ShailyPeak.jpg" width="1000px" height="700px" ALIGN="center"><br><br></div><br>
+    
+                    <p>
+                        Take out time to explore the beautiful Shaily Peaks which is home to nature’s artistic views. Located in Naldehra, this is one of the most spectacular places to visit in Shimla during December. This place can be visited by riding a pony or by commuting through a motorable road. Apart from that, there is a steep trail which can be taken to reach this place. This place is suitable for experiencing adventure sports like hiking and trekking. Apart from that, there are views of the snow-capped mountains which makes all the strenuous efforts worth it.      
+                    </p>
+                    <br>
+    
+    
+                </div>
+                <div class="scroll" id="5">
+                    <h2>Best time to Visit</h2>
+                    <br>
+                    <p>
+                        March to June: This is a popular tourist season in Shimla as the weather is quite pleasant and perfect for outdoor activities. The temperature is comfortable and usually varies between 15°C and 30°C.       
+                    </p>
+                    <br>
+                </div><br>
+                <div class="scroll" id="3">
+                    <h2>About Food</h2>
+                    <br>
+                    <p>
+                        Madra
+                        Dhaam
+                        Sidu
+                        Thukpa
+                        Babru
+                        Chha Gosht
+                        Mash Daal
+                        Chicken Anardana                                                             
+                    </p>
+                </div>
+                <br>
+                <div class="scroll" id="4">
+                    <h2>Transportation Facility</h2>
+                    <br>
+                    <div class="transport">
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/aeroplane.png" alt="travelimage">
+                            </div>
+                            <h3>By Air</h3>
+                            <p>Thus one who is looking to reach Shimla by air, the Chandigarh Airport and the New Delhi Airport are the closest one. There are regular flights from pune to Chandigarh as well as the domestic airport connects to all other major cities in India. </p>
+                        </div>
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/train1.jpg" alt="travelimage">
+                            </div>
+                            <h3>By Rail</h3>
+                            <p>The nearest broad gauge railway station from Shimla is the Kalka Railway Station which is only 90 km away. Chandigarh Railway station is also just 113 km away from Shimla.  </p>
+                        </div>
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/roadimg.png" alt="travelimage">
+                            </div>
+                            <h3>By Road</h3>
+                            <p>NH 1 and NH 22 lead to Shimla from New Delhi. Travellers can board luxury buses from ISBT Kashmiri Gate, approximately eight hours away, depending upon the traffic. </p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- <div class="scroll" id="5">
+                    <h2>Best time to Visit</h2>
+                    <br>
+                    <p>
+                        March to June: This is a popular tourist season in Shimla as the weather is quite pleasant and perfect for outdoor activities. The temperature is comfortable and usually varies between 15°C and 30°C.       
+                    </p>
+                    <br>
+                </div> -->
+
+
+                <div class="scroll" id="6">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218696.70335318934!2d77.0192791176687!3d31.07814405827095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390578e3e35d6e67%3A0x1f7e7ff6ff9f54b7!2sShimla%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1647494454662!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                            </div>
+
+
+        </section>
+
+    </div>
+</body>
+
+</html>

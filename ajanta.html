@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Ajanta Ellora Caves
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        /* .infoone {
+            font-size: 25px;
+        } */
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .infoone p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+
+        }
+
+        .infoone img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+        .list {
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            
+
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: rgb(0, 0, 0);
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 120px;
+
+        }
+
+        .besttime {
+            color: black;
+            font-size: 25px;
+        }
+
+        .besttime p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+
+        }
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        .ajanta img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .ajanta p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+        
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+        ul li a:hover{
+    color: rgb(219, 98, 154);
+    text-decoration: underline;
+    padding-bottom: 5px;
+    text-decoration-color: rgb(219, 98, 154);
+    
+    
+  }
+        
+
+    </style>
+
+</head>
+
+<body  bgcolor="#F5CEC7">
+
+    <div class="navbar">
+        <div class="icon">
+            <a href="index.html">
+                <img src="photos/logob.png" width="130px" height="130px">
+        </div>
+        </a>
+        <div class="menu">
+            <!--menu bar-->
+            <ul>
+
+                <li><a href="about.html"></i>About Us</a></li>
+                <li><a>Destination</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="North.html" target="_blank">North</a></li>
+                            <li><a href="South.html" target="_blank">South</a></li>
+                            <li><a href="East.html" target="_blank">East</a></li>
+                            <li><a href="West.html" target="_blank">West</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="review.html">Review</a></li>
+
+
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+            <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg> </button></a>
+            <script>
+                function openPage() {
+                    var x = document.getElementById("search").value;
+                    if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                    if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                    if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                    if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                    if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                    if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                    if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                    if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                    if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                    if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                    if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                    if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                    if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                    if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                    if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                    if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                    if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                    if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                    if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                    if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                    if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                    if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                    if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                    if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                    if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                    if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                    if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                    if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                    if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                    if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                    if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                    if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                    if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                    if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                    if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                    if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                    if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                    if (x === "") { window.open(".html") };
+
+
+
+                }
+            </script>
+
+        </div>
+    </div>
+    <br>
+
+    <section>
+        <br>
+
+
+
+        <div class="ajanta">
+            <img src="photos/Ajanta caves.jpg " width="1000px" height="600px"
+                ALIGN="left"><br><br><br><br><br><br><br><br><br><br>
+            <h1 ALIGN="RIGHT">
+                <pre>    Ajanta Caves</pre>
+            </h1>
+            <h2>Maharashtra</h2>
+            <br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <a class="bar" href="#abouttheplace">About the place</a>
+            <a class="bar" href="#besttimetovisit">Best time to visit</a>
+            <a class="bar" href="#thingstodo">Things to do</a>
+            <a class="bar" href="#transportation">Transportation</a>
+            <br><br><br><br><br>
+
+            <div class="scroll" id="abouttheplace">
+                <h2>About the place</h2>
+                <br>
+
+                <p> Ajanta Caves, Buddhist rock-cut cave temples and monasteries, located near Ajanta village,
+                    north-central Maharashtra state, western India, that are celebrated for their wall paintings.
+                    The temples are hollowed out of granite cliffs on the inner side of a 70-foot (20-metre) ravine in
+                    the
+                    Wagurna River valley 65 miles (105 km) northeast of Aurangabad, at a site of great scenic beauty.
+                    The Ajanta Caves have 30 rock-cut Buddhist caves and located at a distance of 106 km from
+                    Aurangabad. The basic designs of the caves are called 'Chaitya grihas' and 'Viharas'.
+                    Out of 30 caves, 5 caves are Buddhist cathedrals and the remaining 25 are monasteries.
+                    The Chaityas are large, rectangular chambers separated by rows of pillars.
+                    They are decorated with sculptures and murals, which depict the many incarnations of Buddha.
+                    The Viharas are rectangular-shaped halls. They have a series of small cells, which are attached on
+                    both
+                    sides.
+                    The caves also include a visual form of the life of Buddha and interesting stories from Jatakas.
+                </p>
+            </div>
+
+            <br>
+
+            <div class="scroll" id="besttimetovisit">
+                <br>
+                <h2>Best Time to Visit</h2>
+                <br>
+                <p>The months between June and March are considered to be the best time to visit Ajanta.
+                    <br>Monsoon (June to September) and winter (November to February) seasons are the best time to
+                    explore
+                    Ajanta Caves,
+                    <br>as the weather is pleasant enough during this time.
+                    <br>Hours to visit Ajanta Caves: 9.00 am to 5:00 pm (Monday closed)
+
+
+
+                </p>
+            </div><br>
+            <br>
+
+            <div class="scroll" id="thingstodo">
+                <br>
+              <h2> Things to do </h2>
+              <br>
+              <p>
+                  <div class="list">
+        
+                <li>Visit View Point and cave complex</li>
+                
+                <li>Visit the Site Museum and Information Centre</li>
+                
+                <li>Explore the beauty of nature</li>
+                
+                <li>Visit medieval fortified Village of Ajanta</li>
+                
+                <li>Shopping from local artisans and shopping plaza</li>
+                   </div>
+
+
+              </p>
+ 
+            </div>
+            <br><br>
+            <div class="scroll" id="transportation">
+                <h2>Transportation</h2>
+                
+                <div class="transport">
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/aeroplane.png" alt="travelimage">
+                        </div>
+                        <h3>By Air</h3>
+                        <p>The nearest airport to reach the caves is the Aurangabad Airport that is 99 km away from
+                            Ajanta. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/train1.jpg" alt="travelimage">
+                        </div>
+                        <h3>By Rail</h3>
+                        <p>Jalgaon city, about 60 kilometre from Ajanta Caves is the nearest rail head. Jalgaon Junction
+                            is well connected to important cities such as Mumbai, Agra, Bhopal, New Delhi, Gwalior,
+                            Jhansi, Goa, Varanasi, Allahabad, Bangalore, Pune among others. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/roadimg.png" alt="travelimage">
+                        </div>
+                        <h3>By Road</h3>
+                        <p> Ajanta caves are well connected by road as well. Ajanta caves are just at the distance of
+                            around 107 kms from Aurangabad; hence you have an option of hiring a taxi or travelling by
+                            the state-run buses. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="scroll" id="transportation">
+            <hr>
+            <br>
+            <br>
+            <br>
+            <h2>Transportation</h2>
+            <br>
+           
+                <h3>By air ✈️ </h3>
+                <br>
+                <p>The nearest airport to reach the caves is the Aurangabad Airport that is 99 km away from Ajanta. 
+                </p>
+                <br>
+                <br>
+            <h3>By train 🚆</h3>
+            <br>
+            <p>Jalgaon city, about 60 kilometre from Ajanta Caves is the nearest rail head. Jalgaon Junction is well connected to important cities such as Mumbai, Agra, Bhopal, New Delhi, Gwalior, Jhansi, Goa, Varanasi, Allahabad, Bangalore, Pune among others.</p>
+            <br><br>
+            <h3>By road 🚗  </h3>
+            <br>
+
+            <p> Ajanta caves are well connected by road as well. Ajanta caves are just at the distance of around 107 kms from Aurangabad; hence you have an option of hiring a taxi or travelling by the state-run buses.</p>
+            </p>
+
+         </div> -->
+        </div>
+
+
+
+
+
+    </section>
+    <br>
+    <!-- <hr> -->
+    <br>
+
+    <section>
+
+
+        <div class="ajanta">
+
+
+            <img src="photos/ellora2.jpg" width="1000px" height="600px" ALIGN="left"><br><br><br><br><br><br><br><br><br><br>
+            <h1 ALIGN="RIGHT">
+                <pre>  Ellora Caves </pre>
+            </h1>
+            <h2>Maharashtra</h2>
+            <br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+          
+            <br>
+            <a class="bar" href="#abouttheplace2">About the place</a>
+            <a class="bar" href="#besttimetovisit2">Best time to visit</a>
+            <a class="bar" href="#thingstodo2">Things to do</a>
+            <a class="bar" href="#transportation2">Transportation</a>
+            <br>
+            <br><br>
+
+
+
+            <div class="scroll" id="abouttheplace2">  
+                <h2>About the place</h2>
+                <br><br>
+                <p>
+                    These 34 monasteries and temples, extending over more than 2 km, were dug side by side in the wall of a
+                high basalt cliff, not far from Aurangabad, in Maharashtra.
+                Ellora, with its uninterrupted sequence of monuments dating from A.D. 600 to 1000, brings the
+                civilization of ancient India to life.
+                Not only is the Ellora complex a unique artistic creation and a technological exploit but, with its
+                sanctuaries devoted to Buddhism, Hinduism and Jainism,
+                it illustrates the spirit of tolerance that was characteristic of ancient India.
+            </p>
+            </div>
+
+            <br>
+          
+            <div class="scroll" id="besttimetovisit2">
+
+                <br>
+                <h2>Best Time to Visit</h2>
+                <br>
+                <p>Winter Season is regarded as the best season to visit Ellora.
+                    During Monsoon Season, Max temperature of this place remains around 35°C.
+                    <br>The month of July to September is regarded as the best time to visit Ellora.
+
+                </p>
+
+            </div>
+            <br><br>
+            <div class="scroll" id="thingstodo2">
+                <br>
+              <h2> Things to do </h2>
+              <br>
+              <p>
+                  <div class="list">
+        
+                <li>Check out the beautiful carving and wall paintings by some of the best artisans of that time.</li>
+                
+                <li>Observe the ingenious architectural work by the ancient craftsmen.</li>
+                
+                <li>Visit the Kailash Temple, the world’s biggest monolithic sculpture.</li>
+                
+                <li>Click some brilliant photographs of the nearby areas of Ellora caves.</li>
+                
+                <li>Spend some time in the monasteries, prayer halls and the temples in the caves</li>
+                   </div>
+
+
+              </p>
+              <br><br>
+ 
+            </div>
+            <div class="scroll" id="transportation2">
+                <h2>Transportation</h2>
+                
+                <div class="transport">
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/aeroplane.png" alt="travelimage">
+                        </div>
+                        <h3>By Air</h3>
+                        <p>The closest transportation service can be found via the Aurangabad railway stations.
+                            <br>The caves of Ellora are only at a 45 minutes distance.
+                        </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/train1.jpg" alt="travelimage">
+                        </div>
+                        <h3>By Rail</h3>
+                        <p>The closest transportation service can be found via the Aurangabad railway stations.
+                            The caves of Ellora are only at a 45 minutes distance. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/roadimg.png" alt="travelimage">
+                        </div>
+                        <h3>By Road</h3>
+                        <p> Central Bus Stand in Aurangabad is 27 km from the Ellora Caves. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="scroll" id="transportation">
+                <hr>
+                <br>
+                <br>
+                <br>
+                <h2>Transportation</h2>
+                <br>
+               
+                    <h3>By air ✈️ </h3>
+                    <br>
+                    <p>The closest transportation service can be found via the Aurangabad railway stations. 
+                    <br>The caves of Ellora are only at a 45 minutes distance.
+                    </p>
+                    <br>
+                    <br>
+                <h3>By train 🚆</h3>
+                <br>
+                <p>The closest transportation service can be found via the Aurangabad railway stations. 
+                   The caves of Ellora are only at a 45 minutes distance.</p>
+                <br><br>
+                <h3>By road 🚗  </h3>
+                <br>
+    
+                <p>Central Bus Stand in Aurangabad is 27 km from the Ellora Caves.</p>
+                </p>
+    
+            </div> -->
+        </div>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.8856208888265!2d75.70106341486083!3d20.551860286258687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd97f7014a75e43%3A0x7ca8d7c57639691f!2sAjanta%20Caves!5e0!3m2!1sen!2sin!4v1647493616766!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+</html>

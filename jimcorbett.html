@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Jim Corbet National Park
+    </title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+
+        .kaz p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .kaz h2 {
+            color: black;
+            font-size: 25px;
+
+        }
+
+        .kaz h3 {
+            color: black
+        }
+
+        .menu ul li a {
+            color: black;
+        }
+
+        .kaz img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        .bar {
+            display: inline;
+            color: rgb(0, 0, 0);
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 10px;
+
+        }
+
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div class="navbar">
+        <div class="icon">
+            <a href="index.html">
+                <img src="photos/logob.png" width="130px" height="130px">
+        </div></a>
+
+        <div class="menu">
+            <!--menu bar-->
+            <ul>
+
+                <li><a href="about.html"></i>About Us</a></li>
+                <li><a>Destination</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="North.html" target="_blank">North</a></li>
+                            <li><a href="South.html" target="_blank">South</a></li>
+                            <li><a href="East.html" target="_blank">East</a></li>
+                            <li><a href="West.html" target="_blank">West</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="review.html">Review</a></li>
+
+
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+            <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg> </button></a>
+            <script>
+                function openPage() {
+                    var x = document.getElementById("search").value;
+                    if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                    if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                    if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                    if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                    if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                    if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                    if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                    if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                    if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                    if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                    if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                    if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                    if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                    if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                    if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                    if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                    if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                    if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                    if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                    if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                    if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                    if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                    if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                    if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                    if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                    if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                    if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                    if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                    if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                    if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                    if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                    if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                    if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                    if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                    if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                    if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                    if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                    if (x === "") { window.open(".html") };
+
+
+
+                }
+            </script>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="kaz">
+        <img src="photos/jim corbett img.jpg" width="1000" height="600" ALIGN="left">
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <h1 Align="right">
+            <pre>    Jim Corbett<br> National Park</h1>
+                
+            <h3>Uttarakhand<h3>
+        
+                <br>
+                <br>
+                <br><br><br><br><br><br><br><br>
+                <br>
+                <br>
+                <br>
+                
+                <a class="bar" href="#aboutthecity">About the city</a>
+                <a class="bar" href="#bestexperience">Best Experiences</a>
+                <a class="bar" href="#besttimetovisit">Best time to visit</a>
+                <!-- <a class="bar" href="#idealduration">Ideal Duration</a> -->
+                <a class="bar" href="#howtoreach">How to Reach</a>
+                <a class="bar" href="#thingstodo">Things To do</a>
+                <a class="bar" href="#placestostay">Places to stay</a>
+                <br><br>
+                <!-- <hr> -->
+
+        <div class="scroll" id="aboutthecity">
+        <br>
+        <p><br><h2>About the Place</h2><p><br>
+
+                Jim Corbett National Park, which is a part of the larger Corbett Tiger Reserve, a Project Tiger Reserve lies in the Nainital district of Uttarakhand. The magical landscape of Corbett is well known and fabled for its tiger richness. Established in the year 1936 as Hailey National Park, Corbett has the glory of being India's oldest and most prestigious National Park. It is also being honored as the place where Project Tiger was first launched in 1973. This unique tiger territory is best known as the father who gave birth of the Project Tiger in India to protect the most endangered species and the Royal of India called Tigers</p>
+            </p><br>
+            <!-- <hr> -->
+
+        </div>
+
+        <div class="scroll" id="bestexperience">
+            <br><br>
+            <p>
+                <h2>Best Experience</h2><br>
+                <p>Corbett offers a lot of scenic beauty and interesting history in the region. The wonderful and unique villages around the park are definitely worth a visit. The people living here will take you back to a very simple time.</p> 
+            </p>
+            <br>
+            <!-- <hr> -->
+
+        </div>
+
+        <div class="scroll" id="besttimetovisit">
+            <br>
+            <p>
+                <h2>Best time to visit</h2><br>
+                <p>December to March is the ideal time to visit the Jim Corbett National Park. The temperature slides down to a cool 5 °C. The weather is perfect for visitors and the wildlfie residing at the park. The chances of spotting a Royal Bengal Tiger is substantially higher during winter months, especially in the mornings..</p>
+            </p><br>
+            <!-- <hr> -->
+
+        </div>
+            <!-- <p>
+                <h2>Ideal Duration</h2>
+                <p>Plan trip for one or two days</p>
+            </p>
+            <br><br>
+            <p>
+                <h2>How to reach</h2>
+                <p>Plan trip for one or two days</p>
+            </p> -->
+            <div class="scroll" id="thingstodo">
+                <br>
+            <p><br>
+                <h2>Things to do</h2><br>
+                <p>Things to do in Jim Corbett include:<br>
+                     1.Jeep Safari<br>
+                     2.Elephant Safari<br>
+                     3.Camping <br>
+                     4.Trekking<br>
+                     5.Fishing <br>
+                     6.Mountain Biking<br> 
+                     7.River Crossin <br>
+                     8.River Rafting <br>
+                     9.Rock Climbing<br> 
+                     10.Visiting Corbett Waterfall<br> 
+                     11. Bird Watching <br>
+                     12.Seek Blessings at Garjia Temple 
+                       and many more.</p>
+                    </p><br>
+                    <!-- <hr> -->
+        
+            </div>
+
+            <div class="scroll" id="placestostay">
+                    <br>
+        
+            <p>
+                <h2>Places to stay</h2><br>
+                <p>Some of the Accomodation places ner Jim Corbett National Park are as follows:<br>
+                    1.Kaar Anantara Spa<br>
+                    2.Taranga Resort Spa<br>
+                    3.The Solluna Resort<br>
+                    4.Paatlidun Safari Lodge<br>
+                    5.The Golden Tusk<br></p>
+            </p>
+            <br>
+            <!-- <hr> -->
+
+
+        </div>
+
+        <!-- <div class="scroll" id="howtoreach">
+            <br><br>
+
+            <h2>Transportation Facility</h2>
+            <br>
+            <ul>
+            <li><h3>BY AIR</h3>
+            <p>
+
+                The nearest Domestic Airport near jim Corbett National is Pantnagar Airport, Pantnagar, roughly one and half hours drive from Corbett. It is well connected to New Delhi through Jagson Airlines. 
+            </p>
+            <br>
+            </li>
+            <li><h3>By RAIL</h3>
+            <p>
+
+                The nearest railhead from Jim Corbett is Ramnagar, connected to major destinations such as Delhi Haridwar, Lucknow and Varanasi. Although there is only one train from Delhi and it has several stops on the way. A more convenient option would be to take a train to Muradabad, and change for Ramnagar.
+            </p>
+            <br>
+            </li>
+            <li><h3>BY ROAD</h3> 
+            <p>
+
+                Corbett is well-connected via Ramnagar by buses. There are daily buses from Delhi, Haridwar and Nainital to Ramnagar. You can choose from a regular to a semi-deluxe and deluxe bus, fares of which would depend upon the type of bus and the distance covered. 
+            </p></li>
+        <hr>
+
+
+        </div> -->
+
+
+        <div class="scroll" id="howtoreach">
+            <h2>Transportation Facility</h2>
+            <br>
+            <div class="transport">
+                <div class="travel">
+                    <div class="trimg">
+                        <img src="photos/aeroplane.png" alt="travelimage">
+                    </div>    
+                    <h3>By Air</h3>
+                    <p>
+                        The nearest Domestic Airport near jim Corbett National is Pantnagar Airport, Pantnagar, roughly one and half hours drive from Corbett. It is well connected to New Delhi through Jagson Airlines.  </p>
+                </div>
+                <div class="travel">
+                    <div class="trimg">
+                        <img src="photos/train1.jpg" alt="travelimage">
+                    </div>
+                    <h3>By Rail</h3>
+                    <p>
+                        The nearest railhead from Jim Corbett is Ramnagar, connected to major destinations such as Delhi Haridwar, Lucknow and Varanasi. Although there is only one train from Delhi and it has several stops on the way. A more convenient option would be to take a train to Muradabad, and change for Ramnagar.</p>
+                </div>
+                <div class="travel">
+                    <div class="trimg">
+                        <img src="photos/roadimg.png" alt="travelimage">
+                    </div>
+                    <h3>By Road</h3>
+                    <p>
+                        Corbett is well-connected via Ramnagar by buses. There are daily buses from Delhi, Haridwar and Nainital to Ramnagar. You can choose from a regular to a semi-deluxe and deluxe bus, fares of which would depend upon the type of bus and the distance covered.
+                        </p>
+                </div>
+            </div>
+            </div>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13886.125826963098!2d78.76592698877617!3d29.530013514560608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a24ffffffffff%3A0x3017b72d3d253fd7!2sJim%20Corbett%20National%20Park!5e0!3m2!1sen!2sin!4v1647494029632!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+        </div>  
+
+        </div>
+
+    </body>
+
+</html>

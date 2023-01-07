@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Pune
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+   <style>
+    .pune p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+            
+        
+        }
+
+        .menu ul li a{
+            color: black;
+
+        }
+
+        .pune img{
+         padding-left: 30px;
+         padding-top: 30px;
+        }
+        .srch{
+            border: 1px solid black;
+            color: black;
+        }
+        .btn{
+            border: 2px solid black;
+            color: black;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 11px;
+        }
+
+        .info p{
+            font-size: 20px;
+            color: black;
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+
+    </style>
+  
+        
+   
+</head>
+
+<body bgcolor="#F5CEC7">    
+            <div>
+                <div class="navbar">
+                    <div class="icon">
+                        <a href="index.html">
+                            <img src="photos/logob.png" width="130px" height="130px">
+                        </a>
+                    </div>
+    
+                    <div class="menu">
+                       
+                        <ul>
+    
+                            <li><a href="about.html"></i>About Us</a></li>
+                            <li><a>Destination</a>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="North.html" target="_blank">North</a></li>
+                                        <li><a href="South.html" target="_blank">South</a></li>
+                                        <li><a href="East.html" target="_blank">East</a></li>
+                                        <li><a href="West.html" target="_blank">West</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="review.html">Review</a></li>
+    
+    
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                        <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                       d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg> </button></a>
+                                <script>
+                                    function openPage() {
+                                        var x = document.getElementById("search").value;
+                                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+            
+                                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+            
+                                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+            
+                                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+            
+            
+                                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+            
+                                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                                        if (x === "") { window.open(".html") };
+            
+            
+            
+                                    }
+                                </script>
+            
+                    </div>
+                </div>
+                    <br>
+                    <section>
+
+             
+                        <div class="pune" >
+                            <img src="photos/pune1.jpg" width="1000px" height="600px" ALIGN="left" ><br><br><br><br><br><br><br><br><br><br>
+                            <h1 ALIGN="RIGHT">
+                                  <pre>    Pune</pre>
+                               </h1>
+                               <h3>Maharashtra</h3>
+                        <br>
+                        <br>
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a class="bar" href="#1">About the city</a>
+                        <a class="bar" href="#2">Places to visit</a>
+                        <a class="bar" href="#6">Best time to visit</a>
+                        <a class="bar" href="#3">About food</a>
+                        <a class="bar" href="#4">Places to stay</a>
+                        <a class="bar" href="#5">Transportation facility</a>
+                        
+                        <a class="bar" href="#7">Map</a>    
+                        <br><br><br>
+                        
+    <div class="info">
+            <div class="scroll" id="1">
+                    <h2>About the city</h2>
+                    <p>
+                    Also called as the 'IT hub OF India'.The thriving metropolis, Pune stores many tourist places that often entice the visitors. With a splash of old world charm, Pune has a number of places of historical importance; and is also lined with other modern attractions like gardens and temples. It is one of those cities that must be visited during Maharashtra tours as it perfectly reflects the state’s diversity.
+                </p>
+            </p>
+            </div>
+                
+            <br><br>
+        
+            <div>
+                <div class="scroll" id="2">
+                <h2>Places to visit</h2>
+                <br><br>
+                <h2>Shaniwaar Wada</h2><br>
+                <img src="photos/Shaniwarwada (1).jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                <p>Shaniwar Wada is a historical fortification in the city of Pune, India. Built in 1732, it was the great seat of the Peshwas of the Maratha Empire until 1818. Following the rise of the Maratha Empire, the palace became the center of Indian politics in the 18th century. 
+                   </p><br>
+                <h2>Rajiv Gandhi Zoological park</h2><br>
+                <img src="photos/Rajiv Gandhi Zoological park.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                <p>Commonly known as the Katraj Snake Park, Rajiv Gandhi Zoological Park is prominent zoo cum snake park in Pune. Spread over 130 acres, it is divided into three parts - an animal orphanage, a snake park, and a zoo; also there's a lake. In the snake park, one can see over 22 species of snakes and 10 other species of reptiles comprising over 150 individuals, including a King Cobra. In this section of the park, one can visit the library too that tells about all the vital information related to snakes. So as to engage more tourism, the park keeps on organizing festivals and snake awareness programs. The zoo in the complex features animals like leopard, sloth bears, sambars, barking deer, black bucks, monkeys, and elephants.</p><br>
+                <h2>The Dagadusheth Halwai Ganapati Mandir</h2><br>
+                <img src="photos/halwitemple.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                <p>The temple is a Hindu Temple located in Pune and is dedicated to the Hindu god Ganesh. The temple is visited by over hundred thousand pilgrims every year.Devotees of the temple include celebrities and chief ministers of Maharashtra who visit during the annual ten-day Ganeshotsav festival.The main Ganesh idol is insured for sum of ₹10 million (US$130,000).The Temple is 130 years old. It celebrated 125 years of its Ganapati in 2017.The temple is a beautiful construction and boasts a rich history of over 100 years. Jay and Vijay, the two sentinels made of marble catch the eye of all at the outset. The construction is so simple that all the proceedings in the temple along with the beautiful Ganesh idol can be seen even from outside. </p><br>
+                <h2>Aga Khan Palace</h2><br>
+                <img src="photos/agakhan.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                <p>The mighty edifice of Aga Khan Palace is situated in Pune and was built by Sultan Muhammed Shah Aga Khan III in the year 1892. It is one of the most important landmarks in Indian history and has been instrumental in many defining moments of India's independence. It was once the site where Mahatma Gandhi, his wife Kasturba Gandhi, as well as Sarojini Naidu and Mahadev Desai were held prisoners. Aga Khan Palace is well known both for its architectural excellence as well as its historical significance. Spread over a vast land of 19 acres, the palace is now the headquarters of the Gandhi National Memorial society. Here, making khadi is still one of the prime activities.</p><br>
+                <h2>Sarasbaug</h2><br>
+                <img src="photos/sarasbhuag.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                <p>Saras Baug is a spectacular garden that is spread over 25 acres of land in the beautiful city of Pune, Maharashtra. Described by many as a heaven for nature lovers, the garden is a popular attraction for both locals and tourists alike. 
+                The area where Saras Baug stands today was once a small lake, which dried up and was converted into the picturesque garden that it is today. Saras Baug’s main attraction is the Talyatla Ganpati Temple, built by the Peshwas in the middle of the lake in the year 1750. In addition to the temple, the beautifully manicured lawns with lush green plantations and gorgeous flowers make this place a great picnic spot for families.</p>
+                <br>
+                <br>
+                </div>
+                <div class="scroll" id="6">
+                    <h2>Best time to Visit</h2>
+                    <br>
+                    <p>
+                        Well, the months of October to February is the ideal time to visit Pune as the climate is pleasant with cool and humid atmosphere and makes it perfect for sightseeing. The temperature in Pune in October nestles at a range of 20 degree and 27 degree whereas it drops to a minimum of 12 degree in the month of November.
+                    </p>
+                </div>
+            <br>    
+                <div class="scroll" id="3">
+                <h2>About Food</h2><br>
+                <p>
+                    Pune city is famous for its weather, hills, IT parks, and reputed educational institutions. Pune is also known for its food. There are lip-smacking delicacies to eat in Pune, you need to look out for.
+                    Misal Pav 
+                    Vada-Pav 
+                    Mango Mastani 
+                    Bhakarwadi
+                    Maharashtrian Thali
+                    Pithla Bhakri
+                    Sabudana Vada 
+
+                </p>
+            </div><br>
+            <div class="scroll" id="4">
+                <h2>Places to stay</h2><br>
+                <p>
+                There are many accomodation options in Pune including the famous ones as follows:
+                1.Novotel Pune Vimaan Nagar
+                2.The Orchid Hotel Hinjewadi
+                3.ibis Pune Vimaan Nagar
+                4.Hyatt Pune
+                5.AR Suites Jewels Royal
+                6.Radisson Blu Hotel Kharadi 
+                </p>
+               
+            </div>
+                <br>
+            <!-- <div class="scroll" id="5">
+                <h2>Transportation Facility</h2>
+                <br>
+                <ul>
+                <li><h3>BY AIR</h3>
+                <p>
+                    Pune Airport,is an airport located approximately 10 km  northeast of the historic centre of Pune in the state of Maharashtra, India.
+                </p>
+                <br>
+                </li>
+                <li><h3>By RAIL</h3>
+                <p>
+                    Pune Railway Junction (station code: Pune) is the main railway junction of the city of Pune, India. It has two accesses, from HH Aga Khan Road on the south and Raja Bahadur Mills Road from the north. 
+                </p>
+                <br>
+                </li>
+                <li><h3>BY ROAD</h3> 
+                <p>
+                    The road network consists of Express Highways, National Highways, State Highways and Major District Roads. And it connects all over india.   
+      
+                </p>
+                <br>
+                </li></ul>
+            </div> -->
+
+            <div class="scroll" id="5">
+                <h2>Transportation Facility</h2>
+                <br>
+                <div class="transport">
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/aeroplane.png" alt="travelimage">
+                        </div>    
+                        <h3>By Air</h3>
+                        <p>
+                            Pune Airport,is an airport located approximately 10 km  northeast of the historic centre of Pune in the state of Maharashtra, India. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/train1.jpg" alt="travelimage">
+                        </div>
+                        <h3>By Rail</h3>
+                        <p>
+                            Pune Railway Junction (station code: Pune) is the main railway junction of the city of Pune, India. It has two accesses, from HH Aga Khan Road on the south and Raja Bahadur Mills Road from the north.</p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/roadimg.png" alt="travelimage">
+                        </div>
+                        <h3>By Road</h3>
+                        <p>
+                            The road network consists of Express Highways, National Highways, State Highways and Major District Roads. And it connects all over india.
+                            </p>
+                    </div>
+                </div>
+                </div>
+
+            <!-- <div class="scroll" id="6">
+                <h2>Best time to Visit</h2>
+                <br>
+                <p>
+                    Well, the months of October to February is the ideal time to visit Pune as the climate is pleasant with cool and humid atmosphere and makes it perfect for sightseeing. The temperature in Pune in October nestles at a range of 20 degree and 27 degree whereas it drops to a minimum of 12 degree in the month of November.
+                </p>
+            </div>
+             -->
+                
+
+                        
+            
+            <div class="scroll" id="7">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d484236.71951301285!2d73.58345874905687!3d18.524411066593686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1647494431481!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+            </div> 
+            </div> 
+    </div>        
+
+        </section>
+
+    </div>
+</body>
+
+</html>
+
+

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Kolkata
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+   <style>
+        .kolkata p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+
+
+        }
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 35px;
+        }
+
+        .kolkata img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        .info p{
+            font-size: 20px;
+            color: black;
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+
+    </style>
+
+
+
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div>
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="photos/logob.png" width="130px" height="130px">
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <ul>
+
+                    <li><a href="about.html"></i>About Us</a></li>
+                    <li><a>Destination</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="North.html" target="_blank">North</a></li>
+                                <li><a href="South.html" target="_blank">South</a></li>
+                                <li><a href="East.html" target="_blank">East</a></li>
+                                <li><a href="West.html" target="_blank">West</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="review.html">Review</a></li>
+
+
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </button></a>
+                <script>
+                    function openPage() {
+                        var x = document.getElementById("search").value;
+                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                        if (x === "") { window.open(".html") };
+
+
+
+                    }
+                </script>
+
+            </div>
+        </div>
+        <br>
+        
+        <section>
+
+
+            <div class="kolkata">
+                <img src="photos/kolkata1.jpg" width="1000px" height="600px"
+                    ALIGN="left"><br><br><br><br><br><br><br><br><br><br>
+                <h1 ALIGN="RIGHT">
+                    Kolkata
+                </h1>
+                <h3>West Bemgal</h3>
+                <br>
+                <br>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <a class="bar" href="#1">About the city</a>
+                <a class="bar" href="#2">Places to visit</a>
+                <a class="bar" href="#6">Best time to visit</a>
+                <a class="bar" href="#3">About food</a>
+                <!-- <a class="bar" href="#4">Places to stay</a> -->
+                <a class="bar" href="#5">Transportation facility</a>
+                
+                <a class="bar" href="#7">Map</a>
+                <br>
+                <br>
+                <br>
+        <div class="info">
+                <div class="scroll" id="1">
+                    <h2>About the city</h2>
+                    <br>
+                    <p>
+                    Kolkata (formerly known as Calcutta), the capital city of West Bengal, is a city of every
+                    traveller’s
+                    dream. With architectural splendour, rich art galleries, vibrant culture and historical
+                    significance,
+                    Kolkata is undeniably one of the most important cities of the country with a significant past and
+                    culture, religious importance, along with a rich art and literary history. Referred as the “City of
+                    Joy”, Kolkata is indeed a place of delight for travel lovers. Kolkata Tourismoffers a wide range of
+                    engaging choices to visitors, ranging from sightseeing, events, activities, cuisine and culture.
+                   
+                    </p>
+                </div>
+                <br><br>
+
+                <div class="scroll" id="2">
+                    <h2>Places to visit</h2>
+                    <br><br>
+
+                    <h2>Howrah Bridges</h2><br>
+                    <img src="photos/howrah bridge.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                    <p>The bridge is one of four on the Hooghly River and is a famous symbol of Kolkata and West Bengal. 
+                        <br>The other bridges are the Vidyasagar Setu (popularly called the Second Hooghly Bridge), the Vivekananda Setu and the relatively new Nivedita Setu. 
+                        <br>It weathers the storms of the Bay of Bengal region, carrying a daily traffic of approximately 100,000 vehicles and possibly more than 150,000 pedestrians, 
+                        <br>easily making it the busiest cantilever bridge in the world. The third-longest cantilever bridge at the time of its construction, the Howrah Bridge 
+                        is currently the sixth-longest bridge of its type in the world.</p><br>
+
+                    <h2>Victoria Memorial</h2><BR>
+                    <img src="photos/Victoria Memorial.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                    <p>Another relic of the British Raj in India, the Victoria Memorial is located in the heart of Kolkata, in West Bengal. 
+                        <br>This white marbled opulent structure was built in memory of Queen Victoria to celebrate her 25 years of rule over India and is almost a replica of the Victoria Memorial in London.
+                        <br> Victoria Memorial is an iconic structure that is synonymous with the city of joy!Another relic of the British Raj in India, 
+                        the Victoria Memorial is located in the heart of Kolkata, in West Bengal. This white marbled opulent structure was built in memory of Queen Victoria to celebrate her 25 years of rule over 
+                        <br>India and is almost a replica of the Victoria Memorial in London. Victoria Memorial is an iconic structure that is synonymous with the city of joy!Another relic of the British Raj in India,
+                        <br> the Victoria Memorial is located in the heart of Kolkata, in West Bengal. This white marbled opulent structure was built in memory of Queen Victoria to celebrate her 25 years of rule over
+                        <br> India and is almost a replica of the Victoria Memorial in London. Victoria Memorial is an iconic structure that is synonymous with the city of joy!The memorial is surrounded by a lush green and well-maintained garden,
+                        <br> which spreads over 64 acres and has numerous statues and sculptures in it. A sixteen-foot tall bronze statue of victory, mounted on ball bearings at the top of the memorial, serves to heighten the overall appeal and grandeur of the entire complex.</p><br>
+
+                    <h2>Fort William Kolkatta</h2><br>
+                    <img src="photos/Fort William Kolkatta.webp" width="1300px" height="700px" ALIGN="center" ><br><br>
+                    <p>The mighty edifice of Fort William is situated in the city of Kolkata, on the eastern bank of the  Hooghly River. Built in the year 1696, the fort is named after King William III and was the first stronghold of the British in the country.
+                        <br> The magnificent structure is spread over 70.9 acres and is embellished with hundreds of arched windows that overlook lush green gardens. 
+                        <br>Meticulous stonework adorns the surface of the building and it took as long as took ten years to reach completion. However, it was soon realized that the building had a few loopholes, and a new octagonal building was
+                         constructed whose foundation was laid by Sir Robert Clive.</p><br>
+
+                    <h2>Belur Math</h2><br>
+                    <img src="photos/Belur Math.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                    <p>Belur Math in Kolkata is the headquarters of the Ramakrishna Math and Mission. Sprawling over forty acres of land on the west bank of the Hooghly River, it is visited by people from all over the world, 
+                        irrespective of their religious beliefs. The temple is known for its distinctive architecture, which fuses Hindu, Christian and Islamic motifs as a symbol of unity of all religions. 
+                        <br>Founded by Swami Vivekananda, the chief disciple of Ramakrishna Paramahansa, the temple is at the heart of the Ramakrishna Movement.
+                        <br> The temple complex also houses a museum and several other affiliated educational institutions.</p><br>
+                        
+                    <h2>Birla Planetarium</h2><br>
+                    <img src="photos/Birla Planetarium.jpg" width="1300px" height="600px" ALIGN="center" ><br><br>
+                    <p>Situated at the famous Chowringhee Road right in the proximity of Victoria Memorial and St. Paul's Cathedral Birla planetarium is the largest planetarium in Asia and the second largest in the world! Situated in the city of joy - Kolkata,
+                         Birla Planetarium is a magnificent edifice set up by Pandit Jawaharlal Nehru on 2nd July 1963. It is one of the three planetariums present in India.
+                          <br>Also known as Taramandal, the Birla Planetarium regularly holds many shows and programs are in various languages including Hindi, English, Bengali, and other regional languages. 
+                          <br>In addition to being a planetarium, Birla Planetarium also has an electronics laboratory and an astronomy gallery that has a collection of paintings and astronomical models.
+                    </p>
+                    <br>
+                    <br>
+
+                </div>
+                <br>
+                
+            <div class="scroll" id="6">
+                <h2>Best time to Visit</h2>
+                <br>
+                <p>
+                     October-March: Starting from autumn the weather is pleasant and is a great time to visit Kolkata. Apart from the weather, this is also the time for festivals. Kolkata comes alive during Durga Puja as there are numerous pandals all over the city with beautiful idols or Goddess Durga and multiple street food stalls. This is followed by Laxmi Puja and Kali Puja.
+
+                </p>
+            </div>
+            <br>
+                                   
+                
+
+
+                <div class="scroll" id="3">
+                <h2>About Food</h2>
+                <p>
+                    About food:
+                    Here’s what you musthog on in Kolkata
+                    <br>
+                    1.Kosha Mangsho At Golbari
+                    2.Biryani
+                    3.Kochu Pata Chin 
+                    4.Rosogolla
+                    5.Beef Chateaubriand
+                    6.Mishti Doi 
+                    7.Nihari
+                    8.Fish Snacks
+
+                </p>
+                </div> 
+            <!-- <div class="scroll" id="4">
+                <h2> Places to stay </h2>
+            </div> -->
+                <br>
+                <!-- <div class="scroll" id="5">
+                <h2>Transportation Facility</h2>
+                <br>
+                <ul>
+                    <li>
+                        <h3>BY AIR</h3>
+                        <p>
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ullam?
+                        </p>
+                        <br>
+                    </li>
+                    <li>
+                        <h3>By RAIL</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quasi?
+                        </p>
+                        <br>
+                    </li>
+                    <li>
+                        <h3>BY ROAD</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, omnis.
+
+                        </p>
+                        <br>
+                    </li>
+                </ul>
+
+            </div> -->
+
+            <div class="scroll" id="5">
+                <h2>Transportation Facility</h2>
+                <br>
+                <div class="transport">
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/aeroplane.png" alt="travelimage">
+                        </div>    
+                        <h3>By Air</h3>
+                        <p>
+                            Closest airport to Kolkata is Netaji Subhas Chandra Bose International Airport (CCU). Distance from Netaji Subhas Chandra Bose International Airport to Kolkata is 8.3 miles / 13.4 kilometers. IATA airport code is CCU. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/train1.jpg" alt="travelimage">
+                        </div>
+                        <h3>By Rail</h3>
+                        <p>
+                            Kolkata railway station (formerly known as Chitpur station) is the newest of the five intercity railway stations serving Howrah and Kolkata, India; the others are Sealdah station in Kolkata and Howrah station, Shalimar station and Santragachi Junction in Howrah.</p>
+                    </div>
+
+
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/roadimg.png" alt="travelimage">
+                        </div>
+                        <h3>By Road</h3>
+                        <p>
+                            The West Bengal state buses let the travelers to come to this city without any difficulty. There are various private buses as well that you can get from here to reach different parts of the country at reasonable cost. Some places near Kolkata are Sunderbans (112 km), Puri (495 km), Konark (571 km) and Darjeeling (624km). 
+                            </p>
+                    </div>
+                </div>
+                </div>
+
+            <!-- <div class="scroll" id="6">
+                <h2>Best time to Visit</h2>
+                <br>
+                <p>
+                     October-March: Starting from autumn the weather is pleasant and is a great time to visit Kolkata. Apart from the weather, this is also the time for festivals. Kolkata comes alive during Durga Puja as there are numerous pandals all over the city with beautiful idols or Goddess Durga and multiple street food stalls. This is followed by Laxmi Puja and Kali Puja.
+
+                </p>
+            </div> -->
+
+
+
+                
+                <div class="map">
+                    <div class="scroll" id="7">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d942446.1199580557!2d87.77062635292737!3d22.67502543205945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1647494252784!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+    </div>
+
+        </section>
+
+    </div>
+</body>
+
+</html>
+</div>
+
+
+</section>
+
+</div>
+</body>
+
+</html>

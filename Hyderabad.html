@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Hyderabad
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        .hydpage p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .hydpage h2 {
+            color: black;
+            font-size: 25px;
+        }
+
+        .hydpage h3 {
+            color: black;
+        }
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+        }
+        .photo img{
+            margin-left: 230px;
+            
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: rgb(0, 0, 0);
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 20px;
+
+        }
+
+        .hydpage img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div>
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="photos/logob.png" width="130px" height="130px">
+
+                </a>
+            </div>
+            <div class="menu">
+                <!--menu bar-->
+                <ul>
+
+                    <li><a href="about.html"></i>About Us</a></li>
+                    <li><a>Destination</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="North.html" target="_blank">North</a></li>
+                                <li><a href="South.html" target="_blank">South</a></li>
+                                <li><a href="East.html" target="_blank">East</a></li>
+                                <li><a href="West.html" target="_blank">West</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="review.html">Review</a></li>
+
+
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </button></a>
+                <script>
+                    function openPage() {
+                        var x = document.getElementById("search").value;
+                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                        if (x === "") { window.open(".html") };
+
+
+
+                    }
+                </script>
+
+            </div>
+        </div>
+        <br>
+
+        <section class="hydpage">
+            <img src="photos/hyderabad1.jpg" width="1000px" height="600px" ALIGN="left"><br><br><br><br><br><br><br>
+            <h1 ALIGN="right">
+                Hyderabad
+            </h1>
+            <h4>Telangana</h4>
+
+
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+            <a class="bar" href="#1">About the city</a>
+            <a class="bar" href="#2">Places to visit</a>
+            <a class="bar" href="#5">Best time to visit</a>
+            <a class="bar" href="#3">About food</a>
+            <a class="bar" href="#4">Transportation facility</a>
+
+            <a class="bar" href="#6">Map</a>
+            <br><br><br><br>
+
+            <div class="scroll" id="1">
+                <h2>About The City</h2>
+                <p>
+
+                    Hyderabad is the capital of southern India's Telangana state. A major center for the technology
+                    industry, it's home to many upscale restaurants and shops. Popular for it’s historic sites,it is
+                    situated on the Deccan Plateau along the banks of the Musi River, in the northern part of South
+                    India. With an average altitude of 542 m (1,778 ft), much of Hyderabad is situated on hilly terrain
+                    around artificial lakes, including the Hussain Sagar lake, predating the city's founding, in the
+                    north of the city centre. Hyderabad is the fourth-most populous city in India with a population of
+                    6.9 million residents within the city limits.
+                    <br>
+                    The tourism industry forms an important role in the economy of Hyderabad. It is also known as city
+                    of pearls or city of Nizams. The people of Hyderabad are called Hyderabadis. Hyderabad was founded
+                    in 1591 AD by Sultan Muhammad Quli Qutb Shah on the banks of river Musi.
+                </p>
+            </div>
+            <br>
+            <div class="scroll" id="2">
+
+                <h2>Places to Visit</h2>
+                <br>
+                <h2>Charminar</h2><br>
+                <div class="photo"><img src="photos/charminar.jpg" width="1000px" height="700px" ALIGN="center"><br><br></div>
+                <p>
+                    The first tourist attraction that comes to mind when you think of Hyderabad is Charminar, which is
+                    located in the heart of the city. Mohammed Quli Qutub Shah constructed this monument in the year
+                    1591.
+                    The architecture of Charminar reflects Cazia style. The idea behind constructing the monument was to
+                    ward off deadly epidemic, which claimed many lives during that period. The four minarets are 48.7
+                    meter
+                    tall. There is a mosque and 45 prayer spaces inside Charminar. Do not get discouraged by the crowd
+                    there
+                    if you want to have a feel of the old city and its culture.
+                </p>
+
+                <br>
+                <h2>Golconda Fort</h2><br>
+                <div class="photo"><img src="photos/Golconda-Fort.jpg" width="1000px" height="700px" ALIGN="center"><br><br></div>
+
+                <p>
+                    A place you cannot afford to miss during your tour of Hyderabad. The name Golconda finds its root in
+                    “Golla Konda”, which means Shepherd's Hill. The fort was originally constructed during the period of
+                    Yadava Dynasty The Golconda fort dates back to 13th century. The acoustics effects are excellent in
+                    the
+                    fort. If you clap your hands at Fateh Darwaza, the sound can be clearly heard at Bala Hissar, which
+                    is
+                    located a kilometer away. The royal palaces and whispering walls are some of its main attractions.
+                </p>
+                <br>
+                <h2>Ramoji Film City</h2><br>
+                <div class="photo"><img src="photos/ramojifimlcity.jpg" width="1000px" height="700px" ALIGN="center"><br><br></div>
+
+                <p>
+                    Ramoji Film City has the Guinness Book Record of being the world's largest film studio. The lavish
+                    gardens and open spaces have been featured in many Indian films, the most recent example being
+                    Bahubali,
+                    which was shot extensively here. A tour of this film city is an experience on its own and therefore,
+                    Ramoji Film City is one of Hyderabad's main attraction.
+                </p>
+                <br>
+                <h2>Old City</h2><br>
+                <div class="photo"><img src="photos/oldcity.jpg" width="1000px" height="700px" ALIGN="center"></div><br>
+
+                <p>
+                    A major tourist spot and the heart of Hyderabad, the old city of Hyderabad has been an important
+                    part of
+                    the city since it was first founded. All the major monuments in the city like Charminar, Taramati
+                    Baradari, Makkah Masjid and many more are located in or in the vicinity of this city. The famous
+                    Laad
+                    Bazaar known for pearls, traditional jewellery is also here and along with The Madina Market, this
+                    place
+                    is a shoppers paradise. This is also the birthplace of biryani and therefore the Hyderabadi cuisine
+                    here
+                    is to die for.
+                </p>
+                <br>
+                <h2>Nehru Zoological Park </h2><br>
+                <div class="photo"><img src="photos/Nehru Zoological Park.jpg" width="1000px" height="700px" ALIGN="center"></div>
+
+                <p>
+                    The 300-acre park with over 1500 wildlife was established in the year 1959 and inaugurated in 1963.
+                    You
+                    will find lion, royal Bengal tiger, white tiger, rhinoceros, orangutan and a lot more. Reptiles such
+                    as
+                    Indian cobra, star tortoises, and giant tortoises are also here. Elephant rides are available to
+                    enjoy
+                    the lush greenery here. Some other main attractions in this area include Lion Safari Park,
+                    Children's
+                    Train and Natural History Museum.
+                </p>
+                <br>
+
+
+            </div>
+            <div class="scroll" id="5">
+                <h2>Best time to Visit</h2>
+                <br>
+                <p>
+                    Hyderabad has a warmer climate and hence cooler months, i.e. October to March are considered ideal
+                    to visit the city. While the summer days are rather uncomfortable, the nights tend to be more
+                    pleasant. The rising mercury levels and humidity make it very challenging to go for outdoor
+                    activities. So, summer isn’t the best time to visit Hyderabad for typical touristy purposes.
+                </p>
+                <br>
+            </div><br>
+            <div class="scroll" id="3">
+                <h2>About Food</h2>
+                <br>
+                <p>
+                    Rice is a staple crop.
+
+                    You can't talk about biryanis without mentioning the Hyderabadi Biryani. Cooked with either mutton
+                    or
+                    chicken, and laced with rich ingredients, this recipe is the stairway to heaven. Believe it or not,
+                    this
+                    dish is such a favourite that people don't mind having it for breakfast, lunch or dinner!
+
+                    Some other must taste dishes include dosa, haleem, keema samosa, marag, kebabs and the list goes on
+                    and
+                    on.
+                </p>
+            </div>
+            <br>
+            <div class="scroll" id="4">
+                <h2>Transportation Facility</h2>
+                <br>
+                <div class="transport">
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/aeroplane.png" alt="travelimage">
+                        </div>
+                        <h3>By Air</h3>
+                        <p>The airport is located in Shamshabad, about 24 kilometres (15 mi) south of Hyderabad. It is
+                            named after Rajiv Gandhi, former Prime Minister of India. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/train1.jpg" alt="travelimage">
+                        </div>
+                        <h3>By Rail</h3>
+                        <p>Secunderabad is one of India's largest and busiest railway stations. The main railway
+                            terminus and a commuter hub in the Hyderabad urban area (the capital of Telangana), it is
+                            one of three major stations serving the city. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/roadimg.png" alt="travelimage">
+                        </div>
+                        <h3>By Road</h3>
+                        <p> It is a part of golden quadrilateral highway network connection, lies on highway between
+                            Chennai and Kolkata. Direct highways connecting hyderabad to Mumbai, Bangalore and Delhi are
+                            busy highways too. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="scroll" id="5">
+                <h2>Best time to Visit</h2>
+                <br>
+                <p>
+                    Hyderabad has a warmer climate and hence cooler months, i.e. October to March are considered ideal
+                    to visit the city. While the summer days are rather uncomfortable, the nights tend to be more
+                    pleasant. The rising mercury levels and humidity make it very challenging to go for outdoor
+                    activities. So, summer isn’t the best time to visit Hyderabad for typical touristy purposes.
+                </p>
+                <br>
+            </div> -->
+
+
+            <div class="scroll" id="6">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974593.1622306635!2d77.84893584405843!3d17.41156977208557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1647493975914!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>

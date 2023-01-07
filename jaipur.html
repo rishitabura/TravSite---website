@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Jaipur
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+   <style>
+        .jaipur p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;       
+        }
+    
+        .jaipur h2{
+            color: black;
+            font-size: 25px;
+        }
+
+        .menu ul li a{
+            color: black;
+
+        }
+
+        .jaipur img{
+         padding-left: 30px;
+         padding-top: 30px;
+        }
+        .srch{
+            border: 1px solid black;
+            color: black;
+        }
+        .btn{
+            border: 2px solid black;
+            color: black;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 40px;
+        }
+
+        .info p{
+            font-size: 20px;
+            color: black;
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+  
+        
+   
+</head>
+
+<body bgcolor="#F5CEC7">    
+            <div>
+                <div class="navbar">
+                    <div class="icon">
+                        <a href="index.html">
+                            <img src="photos/logob.png" width="130px" height="130px">
+                        </a>
+                    </div>
+    
+                    <div class="menu">
+                       
+                        <ul>
+    
+                            <li><a href="about.html"></i>About Us</a></li>
+                            <li><a>Destination</a>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="North.html" target="_blank">North</a></li>
+                                        <li><a href="South.html" target="_blank">South</a></li>
+                                        <li><a href="East.html" target="_blank">East</a></li>
+                                        <li><a href="West.html" target="_blank">West</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="review.html">Review</a></li>
+    
+    
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                        <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                       d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg> </button></a>
+                                <script>
+                                    function openPage() {
+                                        var x = document.getElementById("search").value;
+                                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+            
+                                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+            
+                                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+            
+                                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+            
+            
+                                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+            
+                                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                                        if (x === "") { window.open(".html") };
+            
+            
+            
+                                    }
+                                </script>
+            
+                    </div>
+                </div>
+                    <br>
+                    <section>
+
+             
+                        <div class="jaipur" >
+                            <img src="photos/jaipur1.jpg" width="1000px" height="600px" ALIGN="left" ><br><br><br><br><br><br><br><br><br><br>
+                            <h1 ALIGN="RIGHT">
+                               <pre>   Jaipur</pre>
+                               </h1>
+                               <h2>Rajasthan</h2>
+                        <br>
+                        <br>
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <a class="bar" href="#1">About the city</a>
+                        <a class="bar" href="#2">Places to visit</a> 
+                        <a class="bar" href="#5">Best time to visit</a>
+                        <a class="bar" href="#3">About food</a>
+                        <a class="bar" href="#4">Transportation facility</a>
+                       
+                        <a class="bar" href="#6">Map</a>
+            <br> <br><br><br>
+            
+                            
+            <div class="info">
+                        <div class="scroll" id="1">
+                            <h2>About The City</h2>
+                            <p>
+                                Jaipur , formerly Jeypore, is the capital and largest city of the Indian state of Rajasthan. As of 2011, the city had a population of 3.1 million, making it the tenth most populous city in the country. Jaipur is also known as the Pink City, due to the dominant colour scheme of its buildings. It is also known as the Paris of India, and Dr. C.V. Raman called it the Island of Glory. It is located 268 km (167 miles) from the national capital New Delhi.
+                                <br>
+                                Jaipur is a popular tourist destination in India and forms a part of the west Golden Triangle tourist circuit along with Delhi and Agra (240 km, 149 mi). It also serves as a gateway to other tourist destinations in Rajasthan such as Jodhpur (348 km, 216 mi), Jaisalmer (571 km, 355 mi), Udaipur (421 km, 262 mi), Kota (252 km, 156 mi) and Mount Abu (520 km, 323 mi).On 6 July 2019, UNESCO World Heritage Committee inscribed Jaipur the "Pink City of India" among its World Heritage Sites. The city is also home to the UNESCO World Heritage Sites Amer Fort and Jantar Mantar.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="scroll" id="2">
+            
+                            <h2>Places to Visit</h2>
+                            <br>
+                            <h2>Jantar Mantar</h2><br>
+                            <img src="photos/jantar1.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                            <p>
+                                The Jantar Mantar, Jaipur is a collection of 19 astronomical instruments built by the Rajput king Sawai Jai Singh II, the founder of Jaipur, Rajasthan. The monument was completed in 1734. It features the world's largest stone sundial and is a UNESCO World Heritage site. It is near City Palace and Hawa Mahal. The instruments allow the observation of astronomical positions with the naked eye. The monument features instruments operating in each of the three main classical celestial coordinate systems: the horizon-zenith local system, the equatorial system, and the ecliptic system.    
+                            </p>
+            
+                            <br>
+                            <h2>Hawa Mahal - Palace of Wind</h2>
+                            <img src="photos/jaipur1.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                            <p>
+                                The Hawa Mahal is a palace in the city of Jaipur, India. Built from red and pink sandstone, the palace sits on the edge of the City Palace, Jaipur, and extends to the Zenana, or women's chambers. The structure was built in 1799 by the Maharaja Sawai Pratap Singh, the grandson of Maharaja Sawai Jai Singh, who was the founder of the city of Jaipur, India. This palace is a five-story pyramidal-shaped monument that rises to about 50 feet (15 m). The top three floors of the structure have the width of a single room, while the first and second floors have patios in front of them.    
+                            </p>
+                            <br>
+                            <h2>Nahargarh Fort</h2>
+                            <img src="photos/Nahargarh Fort.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                            <p>
+                                Nahargarh Fort stands on the edge of the Aravalli Hills, overlooking the city of Jaipur in the Indian state of Rajasthan. Along with Amer Fort and Jaigarh Fort, Nahargarh once formed a strong defence ring for the city. One of the major tourist attractions of Jaipur, Nahargarh Fort is noted for its extended wall which connects it to the Jaigarh Fort. Nahargarh Fort was built in 1734 by Maharaja Sawai Jai Singh II.    
+                            </p>
+                            <br>
+                            <h2>Amer Fort</h2>
+                            <img src="photos/Amer Fort.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                            <p>
+                                Amer Fort is known for its artistic style elements. With its large ramparts and series of gates and cobbled paths, the fort overlooks Maota Lake, which is the main source of water for the Amer Palace. Mughal architecture greatly influenced the architectural style of several buildings of the fort.    
+                            </p>
+                            <br>
+                            <h2>Birla Mandir Temple</h2>
+                            <img src="photos/Birla Mandir Temple.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                            <p>
+                                Birla Mandir, Jaipur is a Hindu temple located in Jaipur, India and is one of many Birla mandirs. It was built by the B.M. Birla Foundation in 1988 and is constructed solely of white marble. It was constructed in the year 1938 by G.D. Birla. Dedicated to goddess Laxmi, goddess of wealth and the preserver, god Narayana, the temple gains historic importance being a symbol of unity among various castes.    
+                            </p>
+                            <br>
+                            <div class="scroll" id="5">
+                                <h2>Best time to Visit</h2>
+                                <br>
+                                <p>
+                                    Jaipur has a warm climate but October to March can be described as the best time to visit the pink city. Summers are too hot with temperatures soaring up to 40 degrees Celsius. Winters will be pleasant and any economical hotel will keep you comfortable.    
+                                </p>
+                                <br>
+                            </div><br>
+            
+            
+                        </div>
+                        <div class="scroll" id="3">
+                            <h2>About Food</h2>
+                            <br>
+                            <p>
+                                The famous signature Rajasthani delicacy, dal, baati, churma, is served in almost every restaurant of Jaipur, be it a fine dine or a roadside dhaba. Dal is a yellow lentil curry, baati is baked bread dipped in desi ghee and churma is a sweet dish.
+                                Gatte ki subzi. Most of Rajasthani cusine came to fruition as a result of the arid conditions.
+                                Laal maans. In this predominantly vegetarian state, the most famous non-vegetarian dish is laal maans.
+                                Bajra ki roti with lasun chutney and ghevar are must try.                                   
+                            </p>
+                        </div>
+                        <br>
+                        <div class="scroll" id="4">
+                            <h2>Transportation Facility</h2>
+                            <br>
+                            <div class="transport">
+                                <div class="travel">
+                                    <div class="trimg">
+                                        <img src="photos/aeroplane.png" alt="travelimage">
+                                    </div>
+                                    <h3>By Air</h3>
+                                    <p>Jaipur Airport is the 11th busiest airport in India in daily scheduled flight operations. It is located in the southern suburb of Sanganer, 13 km (8.1 mi) from Jaipur. </p>
+                                </div>
+                                <div class="travel">
+                                    <div class="trimg">
+                                        <img src="photos/train1.jpg" alt="travelimage">
+                                    </div>
+                                    <h3>By Rail</h3>
+                                    <p>Jaipur Junction (Code: JP) is a railway station in Jaipur. This station serves as the headquarters of the Jaipur Railway Division and the North Western Railway zone of the Indian Railways. </p>
+                                </div>
+                                <div class="travel">
+                                    <div class="trimg">
+                                        <img src="photos/roadimg.png" alt="travelimage">
+                                    </div>
+                                    <h3>By Road</h3>
+                                    <p>Jaipur has one of the best road connectivity, partially because of its close proximity to the national capital New Delhi. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="scroll" id="5">
+                            <h2>Best time to Visit</h2>
+                            <br>
+                            <p>
+                                Jaipur has a warm climate but October to March can be described as the best time to visit the pink city. Summers are too hot with temperatures soaring up to 40 degrees Celsius. Winters will be pleasant and any economical hotel will keep you comfortable.    
+                            </p>
+                            <br>
+                        </div> -->
+            
+            <div class="scroll" id="6">                             
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455498.8293780637!2d75.51105210546858!3d26.884935778904154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1647494002836!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+            </div>  
+        </div>
+    </div>
+
+        </section>
+
+    </div>
+</body>
+
+</html>
+
+

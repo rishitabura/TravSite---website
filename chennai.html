@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Chennai
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        .chenpage p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .chenpage h2{
+            color: black;
+            font-size:25px;
+        }
+        .chenpage h3{
+            color: black;
+        }
+
+        .menu ul li a{
+            color: black;
+
+        }
+
+        .chenpage img{
+         padding-left: 30px;
+         padding-top: 30px;
+        }
+        .srch{
+            border: 1px solid black;
+            color: black;
+        }
+        .btn{
+            border: 2px solid black;
+            color: black;
+        }
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .scroll h2 {
+            color: black;
+        }
+        .photo img{
+            margin-left: 240px;
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: rgb(0, 0, 0);
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 20px;
+
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div>
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="photos/logob.png" width="130px" height="130px">
+           
+                </a> </div>
+            <div class="menu">
+                <!--menu bar-->
+                <ul>
+
+                    <li><a href="about.html"></i>About Us</a></li>
+                    <li><a>Destination</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="North.html" target="_blank">North</a></li>
+                                <li><a href="South.html" target="_blank">South</a></li>
+                                <li><a href="East.html" target="_blank">East</a></li>
+                                <li><a href="West.html" target="_blank">West</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="review.html">Review</a></li>
+
+
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                               d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </button></a>
+                        <script>
+                            function openPage() {
+                                var x = document.getElementById("search").value;
+                                if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                                if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                                if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                                if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                                if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+    
+                                if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                                if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                                if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                                if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                                if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                                if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                                if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+    
+                                if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                                if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                                if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                                if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                                if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                                if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                                if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                                if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+    
+                                if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                                if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                                if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                                if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                                if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                                if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                                if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                                if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                                if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                                if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                                if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                                if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+    
+    
+                                if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                                if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                                if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                                if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+    
+                                if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                                if (x === "") { window.open(".html") };
+    
+    
+    
+                            }
+                        </script>
+    
+            </div>
+        </div>
+            <br>
+        <section class="chenpage">
+            <img src="photos/chennai1.jpg" width="1000px" height="600" ALIGN="left"> <br><br><br><br><br><br><br><br><br>
+            <h1 ALIGN="right">
+              <pre>    Chennai</pre> 
+            </h1>
+            <h4>Tamil Nadu</h4>
+            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br>
+            <a class="bar" href="#1">About the city</a>
+            <a class="bar" href="#2">Places to visit</a>
+            <a class="bar" href="#3">About food</a>
+            <a class="bar" href="#4">Transportation facility</a>
+            <a class="bar" href="#5">Best time to visit</a>
+            <a class="bar" href="#6">Map</a>
+            <br><br><br>
+            
+            <div class="scroll" id="1">
+                <h2>About The City</h2>
+                <p>
+                    
+                    Chennai, on the Bay of Bengal in eastern India, is the capital of the state of Tamil Nadu. The state's largest city in area and population as well, Chennai is located on the Coromandel Coast of the Bay of Bengal, and is the most prominent cultural, economic and educational centre of South India. The city is home to Fort St. George, built in 1644 and now a museum showcasing the city’s roots as a British military garrison and East India Company trading outpost, when it was called Madras. 
+                    <br>
+                    Famous as the biggest cultural and economic centre down south, Chennai was earlier known as Madras. The city houses several Hindu temples, churches and museums. From its white-sand beaches to mouth-watering seafood 
+                    <br>
+                    It was ranked the 43rd-most visited city in the world for the year 2015[24] and was ranked the 36th-most visited city in the world for the year 2019. The Quality of Living Survey rated Chennai as the safest city in India.[26] Chennai attracts 45 percent of health tourists visiting India, and 30 to 40 percent of domestic health tourists.[27] As such, it is termed "India's health capital".  
+                </p>
+            </div>
+            <br>
+            <div class="scroll" id="2">
+                <h2>Places to Visit</h2>
+                <br>
+                <h2>Religious Sites</h2>
+                
+                <p>
+                Religious sites include Kapaleeshwarar Temple, adorned with carved and painted gods, and St. Mary’s, a 17th-century Anglican church. Believed to be one of the oldest and most revered temples of Chennai, Kapaleeswarar Temple is a shrine of Lord Shiva. In the temple, the wife of Lord Shiva, Goddess Parvati is worshipped in the incarnation of Goddess Karpagambal. 
+                </p>
+
+                <br>
+                <h2>Marina Beach</h2><br>
+                <div class="photo"><img src="photos/marinebeach.jpg" width="1000px" height="700px" ALIGN="center" ><br><br></div>
+
+                <p>
+                Stretching 13 kilometres in length from St. George Fort to Mahabalipuram, Marina Beach enjoys the limelight of both tourists and locals for being the second longest (urban) natural beach in the world. Witness cricket matches, fish markets, children flying kites and astrologers at the beach side as you take a walk along the shoreline. 
+                </p>
+                <br>
+                <h2>Queen Land</h2><br>
+                <div class="photo"><img src="photos/queen land.webp" width="1000px" height="700px" ALIGN="center" ><br><br></div>
+
+                <p>
+                Go crazy on a roller-coaster, capture the panoramic view on a cable car, splash at the Himalayan water ride or get puzzled at the Mirror House. With more than 50 rides spread over an area of 70 acres, this amusement park is a major draw for children and adults alike. You can also find food and beverages outlets that are located within the park. Queens Land is just a 30-minute drive from central town of Chennai and ideal for a family outing in Chennai. While they have a huge car parking, you can also take regular buses from Guindy and T. Nagar area in Chennai. 
+                </p>
+                <br>
+                <h2>Tamil Nadu Science and technology center </h2><br>
+                <div class="photo"><img src="photos/TN science centre.jpg" width="1000px" height="700px" ALIGN="center" ><br><br></div>
+
+                <p>
+                Established in 1983 by the Tamil Nadu Government, this institute provides educational tours and activities displaying the importance of science and technology in today’s world. Spread over twenty acres, this centre highlights the norms of scientific technology amongst people and students. 
+                The centre has many options from a planetarium to a science centre, from a science gallery to a 3D science movie. Amongst all, two of its most popular centres are Periyar Science and Technology Centre and Birla Planetarium. 
+                </p>
+                <br>
+                <h2>Ubbalamadugu fall</h2><br>
+                <div class="photo"><img src="photos/Ubbalamadugu fall.jpg" width="1000px" height="700px" ALIGN="center" ><br><br></div>
+                <p>
+                Located in the Chittoor district, approximately 80 kilometres from Chennai Ubbalamadugu Falls is situated inside the dense forest of Kaambakam. Also known as Tada Falls by locals, the waterfall is a beautiful sight accompanied by hillocks and greenery. 
+                Reaching the waterfall is an adventure in itself as you'll need to trek up till the waterfall and take guidance for the hike from the arrows marked on the way. Ideal for activities like picnics, trekking and hiking, the time between October to March is ideal to capture the scenic beauty of the falls.
+                </p>
+                <br>
+            </div>
+            <br>
+            <div class="scroll" id="5">
+                <h2>Best time to Visit</h2>
+                <br>
+                <p>
+                Peak Season – The best time to visit Chennai is between the months of October to March, i.e. from the end of monsoon and all of winter. During this time, the weather is relatively pleasant and it's neither hot and sticky nor cloudy and rainy. The temperature during these months hovers between 20 and 25 Degree Celsius. Even during daytime, there are cool breezes from the sea which provide relief from the otherwise hot weather. 
+                </p>
+            </div><br>
+            <div class="scroll" id="3">
+                <h2>About Food</h2>
+                <br>
+                <p>
+                Rice is a staple crop in Chennai.
+
+                Idli, the most famous dish in Tamilnadu, as well as the whole southern region is Idli. Prepared with a grind mixture of soaked rice and white lentil, Idli is best to eat in the breakfast time. 
+
+                Dosai Chutney, Onion Tomato Uttapam, Pongal with chutney, sambar, vada are some other prominent dishes one should taste atleast once. 
+                </p>
+            </div>
+                <br>
+            <div class="scroll" id="4">
+                <h2>Transportation Facility</h2>
+                <br>
+                <div class="transport">
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/aeroplane.png" alt="travelimage">
+                        </div>    
+                        <h3>By Air</h3>
+                        <p>Chennai Airport is located about 21 kilometers (13 miles) southwest of city center. Busiest international routes from MAA Airport are Dubai, Colombo, Singapore, Kuala Lumpur, Doha, Muscat, Bangkok, Kuwait, Abu Dhabi and Hong Kong. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/train1.jpg" alt="travelimage">
+                        </div>
+                        <h3>By Rail</h3>
+                        <p>It is connected to Moore Market Complex railway station, Chennai Central metro station, Chennai Park railway station, Chennai Park Town railway station and is 2 km from Chennai Egmore railway station. The terminus connects the city to northern India, including Kolkata, Mumbai, New Delhi and Ahmedabad as well as to Bangalore, Coimbatore, Hyderabad and different parts of Kerala. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/roadimg.png" alt="travelimage">
+                        </div>
+                        <h3>By Road</h3>
+                        <p>Chennai is one of the vertices of the Golden Quadrilateral, the biggest highways build to connect major cities like Mumbai, Delhi, Chennai, Kolkata. Thus, it makes travelling to Chennai by road much easier. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="scroll" id="5">
+                <h2>Best time to Visit</h2>
+                <br>
+                <p>
+                Peak Season – The best time to visit Chennai is between the months of October to March, i.e. from the end of monsoon and all of winter. During this time, the weather is relatively pleasant and it's neither hot and sticky nor cloudy and rainy. The temperature during these months hovers between 20 and 25 Degree Celsius. Even during daytime, there are cool breezes from the sea which provide relief from the otherwise hot weather. 
+                </p>
+            </div> -->
+            </div>
+            <div class="scroll" id="6">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497512.4594424334!2d79.92950174925558!3d13.047375506539689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1647493753627!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+            </div>  
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
+

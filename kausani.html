@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kausani</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+
+        .new img {
+            padding-left: 30px;
+            padding-top: 30px;
+
+        }
+
+        .menu ul li a {
+            color: black;
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            margin-left: 80px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+
+
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div class="navbar">
+        <div class="icon">
+            <a href="index.html">
+                <img src="photos/logob.png" width="130px" height="130px">
+            </a>
+        </div>
+
+        <div class="menu">
+            <!--menu bar-->
+            <ul>
+
+                <li><a href="about.html"></i>About Us</a></li>
+                <li><a>Destination</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="North.html" target="_blank">North</a></li>
+                            <li><a href="South.html" target="_blank">South</a></li>
+                            <li><a href="East.html" target="_blank">East</a></li>
+                            <li><a href="West.html" target="_blank">West</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="review.html">Review</a></li>
+
+
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+            <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg> </button></a>
+            <script>
+                function openPage() {
+                    var x = document.getElementById("search").value;
+                    if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                    if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                    if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                    if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                    if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                    if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                    if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                    if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                    if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                    if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                    if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                    if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                    if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                    if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                    if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                    if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                    if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                    if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                    if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                    if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                    if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                    if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                    if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                    if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                    if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                    if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                    if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                    if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                    if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                    if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                    if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                    if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                    if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                    if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                    if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                    if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                    if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                    if (x === "") { window.open(".html") };
+
+
+
+                }
+            </script>
+
+        </div>
+    </div>
+    <br>
+    <div class="new">
+
+        <section><img src="photos/kausani.png" width="1000px" height="600px"
+                ALIGN="left"><br><br><br><br><br><br><br><br><br><br>
+            <h1 ALIGN="right">
+                <pre>         Kausani</h1>
+            <h2>Uttarakhand</h2>
+            
+        </section>
+        <br>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a class="bar" href="#aboutthecity">About the city</a>
+        <!-- <a class="bar" href="#bestexperience">Best Experiences</a> -->
+        <a class="bar" href="#besttimetovisit">Best time to visit</a>
+        <!-- <a class="bar" href="#idealduration">Ideal Duration</a> -->
+       
+        <a class="bar" href="#thingstodo">Things To do</a>
+        <a class="bar" href="#placestostay">Places to stay</a> 
+        <a class="bar" href="#howtoreach">How to Reach</a>
+
+       
+<br>
+
+
+        <section>
+            <br>
+            <br>
+            <div class="scroll" id="aboutthecity">
+
+            
+            <p> <br><h2><b>About The City</h2></b>
+                <p><br>
+                    Kausani is a hill station and Village situated in Bageshwar district in the state of Uttarakhand, India. It is famous for its scenic splendour and its spectacular 300 km-wide panoramic view of Himalayan peaks like Trisul, Nanda Devi and Panchchuli. Mahatma Gandhi called this place the 'Switzerland of India', due to similarity in landscapes.
+                The beautiful destination of Kausani lies along the mighty Himalayas and is situated amidst dense pine
+                trees and overlooks the beautiful valleys of Someshwar, Garur and Baijnath Katyuri, that makes it one of
+                the top 60 hill stations in India. This is among the top hill stations in India.
+            </p>
+            </p><br></div>
+            
+
+            <!-- <div class="scroll" id="bestexperience">
+
+            
+            <p><br>
+            <h2><b>Best Experiences</h2></b><br>
+            <p> Go for the popular trekking options such as Sunder Dhunga Trek, Pindari Glacier Trek, and Milam Glacier
+                Trek. Other attractions present here are the beautiful Rudradhari Waterfalls and a visit to the Kausani
+                Tea Gardens and the pear orchards.</p><br>
+            </p><br></div> -->
+            
+
+            <p><div class="scroll" id="besttimetovisit">
+
+            
+            <h2><b>Best Time To Visit</h2></b><br>
+            <p> April to June
+                Visit for a minimum of 3 days for a good trip.
+            </p></b><br>
+            </p><br></div>
+            
+
+            <!-- <div class="scroll" id="idealduration">
+
+            
+            <p></b><br>
+            <h2><b>Ideal Duration</h2></b></b><br>
+            <p>Visit for a minimum of 3 days for a good trip.</p></b><br>
+            </p><br></div> -->
+            
+
+            <!-- <div class="scroll" id="howtoreach">
+                 
+           
+            <p></b>
+            <h2><b>How To Reach</h2></b></b><br>
+            <p>Take a flight to Pantnagar (165kms) followed by a 4 hour taxi ride. Or take the train to Kathgodam (132
+                kms) followed by a 3 hour taxi ride. Buses from ISBT Anand Vihar run to Kausani in 11 hours.</p>
+            </p></b><br></div> -->
+            
+
+           
+
+            <div class="scroll" id="thingstodo">
+
+           
+            <p></b>
+            <h2><b>Things To Do</h2></b><br>
+            <p> Go for the popular trekking options such as Sunder Dhunga Trek, Pindari Glacier Trek, and Milam Glacier
+                Trek. <br>Other attractions present here are the beautiful Rudradhari Waterfalls and a visit to the Kausani
+                <br>Tea Gardens and the pear orchards.
+                <br>Lakshmi Ashram is one kilometre away from the Kausani, and is a center run by Kumauni women and dedicated to social service and the upliftment of women.
+                <br>Tea gardens (5 km on Bageshwar Road),Baijnath group of temples (16.5 km on Bageshwar Road)and Bageshwar are the places of interest nearby.
+                <br>Pant Museum is named after the famous Hindi poet, Sumitranandan Pant, who was born in Kausani, the Museum has the articles of his daily use, drafts of his poems, letters, his awards etc. This Museum is at a short distance from the Kausani bus terminal.
+            </p>
+            </p><br>
+        </div>
+            
+
+            <div class="scroll" id="placestostay">
+
+            
+            <p></b>
+            <h2><b>Places To Stay</h2></b></b><br>
+            <p>Aliya himalyan village, Hotel Deepraj, Xomotel Sunita Himalayan Paradise, Hotel Vishwanath, Rudhradhari
+                Cottage</p></b><br>
+            </p></div>
+            <br>
+            <div class="scroll" id="howtoreach">
+                 
+           
+                <p></b>
+                <h2><b>How To Reach</h2></b></b><br>
+                <p>Take a flight to Pantnagar (165kms) followed by a 4 hour taxi ride. Or take the train to Kathgodam (132
+                    kms) followed by a 3 hour taxi ride. Buses from ISBT Anand Vihar run to Kausani in 11 hours.</p>
+                </p></b><br></div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27685.898945650777!2d79.58692950065637!3d29.843001700823155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a74e7fb73633e1%3A0x173a54291447af4f!2sKausani%2C%20Uttarakhand%20263639!5e0!3m2!1sen!2sin!4v1647494186905!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+            </div>  
+
+        </section>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

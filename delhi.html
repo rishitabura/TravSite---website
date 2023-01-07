@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Delhi
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+    .delhi p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+            
+        
+        }
+
+        .menu ul li a{
+            color: black;
+
+        }
+
+        .delhi img{
+         padding-left: 30px;
+         padding-top: 30px;
+        }
+        .srch{
+            border: 1px solid black;
+            color: black;
+        }
+        .btn{
+            border: 2px solid black;
+            color: black;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+        /* .scroll img{
+            padding-left: 150px;
+        } */
+        .list {
+            text-align: center;
+            color: black;
+            font-size: 20px;
+            
+
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 11px;
+        }
+
+        .info p{
+            font-size: 20px;
+            color: black;
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+
+    </style>
+  
+        
+   
+</head>
+
+<body bgcolor="#F5CEC7">
+   
+
+    <div>
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="photos/logob.png" width="130px" height="130px">
+                </a>
+            </div>
+
+            <div class="menu">
+               
+                <ul>
+
+                    <li><a href="about.html"></i>About Us</a></li>
+                    <li><a>Destination</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="North.html" target="_blank">North</a></li>
+                                <li><a href="South.html" target="_blank">South</a></li>
+                                <li><a href="East.html" target="_blank">East</a></li>
+                                <li><a href="West.html" target="_blank">West</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="review.html">Review</a></li>
+
+
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                               d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </button></a>
+                        <script>
+                            function openPage() {
+                                var x = document.getElementById("search").value;
+                                if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                                if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                                if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                                if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                                if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+    
+                                if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                                if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                                if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                                if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                                if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                                if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                                if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+    
+                                if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                                if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                                if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                                if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                                if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                                if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                                if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                                if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+    
+                                if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                                if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                                if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                                if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                                if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                                if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                                if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                                if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                                if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                                if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                                if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                                if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+    
+    
+                                if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                                if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                                if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                                if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+    
+                                if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                                if (x === "") { window.open(".html") };
+    
+    
+    
+                            }
+                        </script>
+    
+            </div>
+        </div>
+            <br>
+            <section>
+
+     
+                <div class="delhi" >
+                    <img src="photos/delhi1.jpg" width="1000px" height="600px" ALIGN="left" ><br><br><br><br><br><br><br><br><br><br>
+                    <h1 ALIGN="RIGHT">
+                           Delhi
+                       </h1>
+                       
+                <br>
+                <br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                        <a class="bar" href="#1">About the city</a>
+                        <a class="bar" href="#2">Places to visit</a> 
+                        <a class="bar" href="#6">Best time to visit</a>
+                        <a class="bar" href="#3">About food</a>
+                        <a class="bar" href="#4">Places to stay</a>
+                        <a class="bar" href="#5">Transportation facility</a>
+                       
+                        <a class="bar" href="#7">Map</a>
+                        <br> <br><br>
+                   
+              
+        <div class="info">
+                    <div class="scroll" id="1">    
+                 <h2> About the city</h2>
+                 <br>
+                <p>
+                    The capital city. A symbol of the country’s rich past and thriving present, Delhi is a city where ancient and modern blend seamlessly together. 
+                    It is a place that not only touches your pulse but even fastens it to a frenetic speed. Home to millions of dreams,
+                     the city takes on unprecedented responsibilities of realizing dreams bringing people closer and inspiring their thoughts.
+            </p>
+            
+            </div>
+            <br>        
+            <div>
+                <div class="scroll" id="2">
+                <h1>Places to visit</h1>
+                
+                <h2>India Gate</h2><br>
+                <img src="photos/indiagate.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                <p>The All India War Memorial, popularly known as the India Gate, is located along the Rajpath in New Delhi.
+                    <br>The imposing structure of India Gate is an awe-inspiring sight and is often compared to the Arch de Triomphe in France, the Gateway of India in Mumbai and the Arch of Constantine in Rome. 
+                    <br>This 42-meter tall historical structure was designed by Sir Edwin Lutyens and is one of the largest war memorials in the country. 
+                    India Gate is also famous for hosting the Republic Day Parade every year.</p><br>
+                <h2>Humayun's Tomb</h2><br>
+                <img src="photos/Humayun's Tomb.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                <p>Humayun’s Tomb, Delhi is the first of the grand dynastic mausoleums that were to become synonyms of Mughal <br>architecture with the 
+                    architectural style reaching its zenith 80 years later at the later Taj Mahal. <br>Humayun’s Tomb stands within a complex of 27.04 ha. 
+                    that includes other contemporary, 16th century Mughal garden-tombs such as Nila Gumbad, Isa Khan, Bu Halima, Afsarwala, Barber’s Tomb and the complex where
+                     the craftsmen employed for the Building of Humayun’s Tomb stayed, the Arab Serai.</p><br>
+                <h2>Qutub Minar</h2><br>
+                <img src="photos/qutubminar.jpg" width="1300px" height="800px" ALIGN="center" ><br><br>
+                <p>Qutab Minar is a soaring, 73 m-high tower of victory, built in 1193 by Qutab-ud-din Aibak immediately after the defeat of Delhi's last Hindu kingdom.
+                    <br> The tower has five distinct storeys, each marked by a projecting balcony and tapers from a 15 m diameter at the base to just 2.5 m at the top.
+                    <br> The first three storeys are made of red sandstone; the fourth and fifth storeys are of marble and sandstone. At the foot of the tower is the Quwwat-ul-Islam Mosque, the first mosque to be built in India. 
+                    <br>An inscription over its eastern gate provocatively informs that it was built with material obtained from demolishing '27 Hindu temples'.
+                     A 7 m-high iron pillar stands in the courtyard of the mosque. It is said that if you can encircle it with your hands while standing with your back to it your wish will be fulfilled.</p><br>
+                <h2>Red Fort</h2><br>
+                <img src="photos/redfort.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                <p>Red Fort, also called Lal Qalʿah, also spelled Lal Kila or Lal Qila, Mughal fort in Old Delhi, India. It was built by Shah Jahān in the mid-17th century and 
+                   <br> remains a major tourist attraction. The fort was designated a UNESCO World Heritage site in 2007.The fort’s massive red sandstone walls, 
+                    <br>which stand 75 feet (23 metres) high, enclose a complex of palaces and entertainment halls, projecting balconies, baths and indoor canals, and geometrical gardens,
+                     as well as an ornate mosque. Among the most famous structures of the complex are the Hall of Public Audience (Diwan-i-ʿAm), which has 60 red sandstone pillars supporting a flat roof, 
+                     <br>and the Hall of Private Audience (Diwan-i-Khas), which is smaller and has a pavilion of white marble.</p><br>
+                <h2>Lotus temple</h2><br>
+                <img src="photos/lotustemple.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                <p>Located in the national capital of New Delhi, the Lotus Temple is an edifice dedicated to the Baha'i faith. 
+                    <br>The magnificent structure of this building unfolds in the form of a stupendous white petal lotus and is one of the most visited establishments in the world. 
+                    <br>The design of this shrine was conceptualized by Canadian architect Fariborz Sahba and was completed in the year 1986. This temple seeks to propagate the oneness of the Almighty
+                     and is open to all regardless of their nationality, religion, race or gender. The Lotus temple is one of the seven Baha'i House of Worship present around the world.</p>
+                <br>
+                <br>
+                </div>
+
+            </div>
+            <br>
+            <div class="scroll" id="6">
+                <h2>Best time to Visit</h2>
+                <br>
+            
+                <p>
+                    The best time to visit Delhi is from October to March when the weather is at its best. 
+                    During this period flowers are at their blooming best, the weather is pleasent and enjoyable to experience Incredible Delhi.
+                </p>
+            </div>
+            <br><br>
+
+            <div class="scroll" id="3">
+                <h2>About Food</h2>
+               <p>
+                   1.Paranthas
+                    <br>2.Chaat
+                    <br>3.Butter Chicken
+                    <br>4.Kebabs
+                    <br>5.Chole Bhature
+                    <br>6.Biryani
+                    <br>7.Rolls
+                    <br>7.Momos
+                    <br>8.Desserts
+                </p>
+                <br>
+            </div>
+            <div class="scroll" id="4">
+            <h2>Places to stay</h2><br>
+            <p> Accommodation facilities are rich in the Capital. It includes the following places:<br><br>
+                1. Hyatt Delhi Residences
+                <br>2.The Oberoi New Delhi
+                <br>3.The Leela Palace New Delhi
+                <br>4.The Imperial New Delhi
+                <br>5.JW Marriot Hotel Delhi Aerocity
+                <br>6.Taj Palace New Delhi </p>
+            </div>
+            
+            
+
+
+            <!-- <div class="scroll" id="5">
+                <h2>Transportation Facility</h2>
+                <br>
+                <ul>
+                <li><h3>BY AIR</h3>
+                <p>
+    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ullam?
+                </p>
+                <br>
+                </li>
+                <li><h3>By RAIL</h3>
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, quasi?   
+                </p>
+                <br>
+                </li>
+                <li><h3>BY ROAD</h3> 
+                <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, omnis.    
+      
+                </p>
+                <br>
+                </li></ul>
+            </div> -->
+<br><br>
+            <div class="scroll" id="5">
+                <h2>Transportation Facility</h2>
+              
+                <div class="transport">
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/aeroplane.png" alt="travelimage">
+                        </div>    
+                        <h3>By Air</h3>
+                        <p>
+                            Indira Gandhi International Airport (IATA: DEL, ICAO: VIDP) is the primary international airport serving Delhi, India. The airport, spread over an area of 5,106 acres (2,066 ha), is situated in Palam, Delhi, 15 km (9.3 mi) south-west of the New Delhi Railway Station and 16 km (9.9 mi) from New Delhi city centre. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/train1.jpg" alt="travelimage">
+                        </div>
+                        <h3>By Rail</h3>
+                        <p>
+                            New Delhi railway station (station code: NDLS) is the main railway station in Delhi, situated between Ajmeri Gate and Paharganj. It is one of the busiest railway station in the country in terms of train frequency and passenger movement. Around 480 trains start, end, or pass through the station daily, which handled 500,000 passengers daily in 2013 with 16 platforms.</p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/roadimg.png" alt="travelimage">
+                        </div>
+                        <h3>By Road</h3>
+                        <p>
+                            Delhi is well connected, by a network of roads and national highways, with all the major cities in India. The three major bus stands in Delhi are Inter State Bus Terminus (ISBT) at Kashmiri Gate, Sarai Kale-Khan Bus Terminus and Anand Vihar Bus Terminus. 
+                            </p>
+                    </div>
+                </div>
+                </div>
+
+            <!-- <div class="scroll" id="6">
+                <h2>Best time to Visit</h2>
+                <br>
+            
+                <p>
+                    The best time to visit Delhi is from October to March when the weather is at its best. During this period flowers are at their blooming best, the weather is pleasent and enjoyable to experience Incredible Delhi.
+                </p>
+            </div> -->
+            <div class="map">
+                <div class="scroll" id="7">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d896374.8711760676!2d76.53279689211203!3d28.645812184396306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!5e0!3m2!1sen!2sin!4v1647494768974!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+            </div>
+        </div> 
+        </div> 
+
+        </section>
+
+    </div>
+</body>
+
+</html>

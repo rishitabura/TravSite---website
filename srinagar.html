@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Srinagar</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .menu ul li a {
+            color: black;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+
+        .new img {
+            padding-left: 30px;
+            padding-top: 30px;
+
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            margin-left: 80px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div class="navbar">
+        <div class="icon">
+            <a href="index.html">
+                <img src="photos/logob.png" width="130px" height="130px">
+            </a>
+        </div>
+
+        <div class="menu">
+            <!--menu bar-->
+            <ul>
+
+                <li><a href="about.html"></i>About Us</a></li>
+                <li><a>Destination</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="North.html" target="_blank">North</a></li>
+                            <li><a href="South.html" target="_blank">South</a></li>
+                            <li><a href="East.html" target="_blank">East</a></li>
+                            <li><a href="West.html" target="_blank">West</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="review.html">Review</a></li>
+
+
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+            <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg> </button></a>
+            <script>
+                function openPage() {
+                    var x = document.getElementById("search").value;
+                    if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                    if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                    if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                    if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                    if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                    if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                    if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                    if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                    if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                    if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                    if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                    if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                    if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                    if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                    if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                    if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                    if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                    if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                    if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                    if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                    if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                    if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                    if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                    if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                    if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                    if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                    if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                    if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                    if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                    if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                    if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                    if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                    if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                    if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                    if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                    if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                    if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                    if (x === "") { window.open(".html") };
+
+
+
+                }
+            </script>
+
+        </div>
+    </div>
+    <br>
+
+    <div class="new">
+
+        <section><img src="photos/srinagar.jpg" width="1000px" height="600px"
+                ALIGN="left"><br><br><br><br><br><br><br><br><br><br>
+            <h1 ALIGN="right">
+                <pre>         Srinagar</h1>
+            <h2>Jammu Kashmir</h2>
+           
+        </section>
+
+        <br>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <a class="bar" href="#aboutthecity">About the city</a>
+        <!-- <a class="bar" href="#bestexperience">Best Experiences</a> -->
+        <a class="bar" href="#besttimetovisit">Best time to visit</a>
+        <!-- <a class="bar" href="#idealduration">Ideal Duration</a> -->
+       
+        <a class="bar" href="#thingstodo">Things To do</a>
+        <a class="bar" href="#placestostay">Places to stay</a> 
+        <a class="bar" href="#howtoreach">How to Reach</a>
+
+
+        <section>
+            <br>
+            <br>
+            <div class="scroll" id="aboutthecity">
+            <p><br><b><h2>About The City</h2> </b>
+                <p>
+                A place of splendid natural beauty, historic gardens and distinctive mosques, Srinagar is without a doubt one of best hill stations in North India.
+                <br>Srinagar is the largest city and the summer capital of Jammu and Kashmir, India. <br>It lies in the Kashmir Valley on the banks of the Jhelum River, a tributary of the Indus, and Dal and Anchar lakes.
+                <br> The city is known for its natural environment, gardens, waterfronts and houseboats. It is also known for traditional Kashmiri handicrafts like Kashmir shawls and also dried fruits.
+                <br>It is the northernmost city of India to have over one million people, the 32nd most populous city in the country, and the second largest city located in the Himalayas, after Kathmandu.
+            
+            </p>
+             
+            </p><br>
+        </div>
+        
+
+            <!-- <div class="scroll" id="bestexperience">
+            <p><br>
+            <h2><b>Best Experiences</b></h2><br>
+            <p> Get enchanted by the beautiful Nishat Bagh and Shalimar Bagh, the botanical gardens during the popular
+                Tulip festival and Badamwari Garden to see the almond trees in full bloom. Make a visit to the tranquil
+                Shankaracharya Mandir, the beautiful Khanqah Shah-i-Hamadan mosque and Pari Mahal. And finally, spend a
+                day exploring life on Dal lake and Nigeen lake. It is among the coldest hill stations in India during
+                winter.</p><br><br>
+            </p><br></div> -->
+            
+
+            <div class="scroll" id="besttimetovisit">
+            <p><br>
+            <h2><b>Best Time To Visit</b></h2><br>
+            <p> April to October 
+
+                <br>Srinagar has a humid subtropical climate. The valley is surrounded by the Himalayas on all sides. 
+                <br>Winters are cool, with daytime temperature averaging to 2.5 °C (36.5 °F), and drops below freezing point at night. 
+                <br>Moderate to heavy snowfall occurs in winter and the highway connecting Srinagar with the rest of India faces frequent blockades due to icy roads and avalanches. Summers are warm with a July daytime average of 24.1 °C (75.4 °F). The average annual rainfall is around 720 millimetres (28 in). Spring is the wettest season while autumn is the driest. 
+                <br>Visit for a minimum of 4 days for a good trip.
+            </p><br>
+            </p>
+        </div>
+        
+
+            <!-- <div class="scroll" id="idealduration">
+            <p><br>
+            <h2><b>Ideal Duration</h2></b><br>
+            <p>Visit for a minimum of 4 days for a good trip.</p><br>
+            </p><br>
+        </div> -->
+            
+
+            <!-- <div class="scroll" id="howtoreach">
+            <p><br>
+            <h2><b>How To Reach</h2></b><br>
+            <p>Take a flight directly to the Srinagar International Airport. <br>Or take the train to Jammu followed by a
+                taxi or a J&K State Road Transport Corporation bus to Srinagar.</p>
+            </p>
+        </div> -->
+            <br>
+
+            <div class="scroll" id="thingstodo"> 
+            <p>
+            <h2><b>Things To Do</h2></b><br>
+            <p>Trekking, Birdwatching
+
+                <br>Srinagar is one of several places that have been called the "Venice of the East".Lakes around the city include Dal Lake – noted for its houseboats – and Nigeen Lake. Apart from Dal Lake and Nigeen Lake, Wular Lake and Manasbal Lake both lie to the north of Srinagar. Wular Lake is one of the largest fresh water lakes in Asia.
+
+                <br>Get enchanted by the beautiful Nishat Bagh and Shalimar Bagh, the botanical gardens during the popular
+                <br>Tulip festival and Badamwari Garden to see the almond trees in full bloom. Make a visit to the tranquil
+                <br>Shankaracharya Mandir, the beautiful Khanqah Shah-i-Hamadan mosque and Pari Mahal. 
+                <br>And finally, spend a day exploring life on Dal lake and Nigeen lake. It is among the coldest hill stations in India during
+                winter.
+            </p>
+            </p><br>
+        </div>
+           
+
+            <div class="scroll" id="placestostay">
+            <p><br>
+            <h2><b>Places To Stay</h2></b><br>
+            <p>Four Points, S Group Of Houseboat, Hotel Fabulous Kashmir, Radisson Srinagar, Hotel Ashai.</p>
+            </p><br>
+        </div>
+        <div class="scroll" id="howtoreach">
+            <p><br>
+            <h2><b>How To Reach</h2></b><br>
+            <p>Take a flight directly to the Srinagar International Airport. <br>Or take the train to Jammu followed by a
+                taxi or a J&K State Road Transport Corporation bus to Srinagar.</p>
+            </p>
+        </div>
+            
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d422855.7231789022!2d74.52725268112819!3d34.106401976879354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1855686e3c5ef%3A0x66244b7cc1e305c6!2sSrinagar!5e0!3m2!1sen!2sin!4v1647494544639!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+            </div>  
+
+        </section>
+    </div>
+
+</body>
+
+</html>

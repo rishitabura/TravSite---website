@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Kanyakumari
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        .kanpage p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .kanpage h2 {
+            color: black;
+            font-size: 25px;
+        }
+
+        .kanpage h3 {
+            color: black;
+        }
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        .kanpage img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+        .photo img{
+            margin-left: 130px;
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 40px;
+        }
+
+        .info p {
+            font-size: 20px;
+            color: black;
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div>
+
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="photos/logob.png" width="130px" height="130px">
+
+                </a>
+            </div>
+            <div class="menu">
+                <!--menu bar-->
+                <ul>
+
+                    <li><a href="about.html"></i>About Us</a></li>
+                    <li><a>Destination</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="North.html" target="_blank">North</a></li>
+                                <li><a href="South.html" target="_blank">South</a></li>
+                                <li><a href="East.html" target="_blank">East</a></li>
+                                <li><a href="West.html" target="_blank">West</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="review.html">Review</a></li>
+
+
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </button></a>
+                <script>
+                    function openPage() {
+                        var x = document.getElementById("search").value;
+                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                        if (x === "") { window.open(".html") };
+
+
+
+                    }
+                </script>
+
+            </div>
+        </div>
+        <br>
+
+        <section class="kanpage">
+            <img src="photos/kanyakumari1.jpg" width="1000px" height="600" ALIGN="left">
+            <br><br><br><br><br><br><br><br><br><br>
+            <h1 ALIGN="left">
+                <pre>      Kanyakumari</pre>
+            </h1>
+            <h4>Tamil Nadu</h4>
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+            <a class="bar" href="#1">About the city</a>
+            <a class="bar" href="#2">Places to visit</a> 
+            <a class="bar" href="#5">Best time to visit</a>
+            <a class="bar" href="#3">About food</a>
+            <a class="bar" href="#4">Transportation facility</a>
+           
+            <a class="bar" href="#6">Map</a>
+            <div class="info">
+                <br><br><br>
+                <div class="scroll" id="1">
+
+                    <h2>About The City</h2>
+                    <p>
+                        Kanyakumari is the only place on earth, where you can see the Sun Rise and Sun Set from the
+                        ocean.
+                        It is the only place in India where one can enjoy the unique spectacle of Sunset and Moonrise
+                        simultaneously on full moon days. It is the southern tip of Indian subcontinent. The
+                        southernmost
+                        town in mainland India, it is sometimes referred to as 'The Land's End'.
+                        <br>
+                        Nagercoil is the capital of Kanyakumari. Nagercoil is famous for its handicrafts like wood
+                        carving,
+                        wooden lacquer ware and lace work and embroidery for exports.
+                        <br>
+                        Owing to its strategic location, Kanyakumari makes for an ideal tourist destination and a
+                        weekend
+                        getaway for the ones living in cities like Trichy, Thiruvananthapuram, Pondicherry, Coimbatore
+                        and
+                        Chennai.
+                    </p>
+                </div>
+                <br>
+
+
+
+                <div class="scroll" id="2">
+                    <h2>Places to Visit</h2>
+                    <br>
+                    <h2>Vivekananda Rock Memorial</h2><br>
+                    <div class="photo"><img src="photos/Vivekananda Rock Memorial.webp" width="1000px" height="700px" ALIGN="center"><br><br></div>
+                    <p>
+                        Dedicated to Swami Vivekananda, a religious reformer, the Vivekananda Rock Memorial is one of
+                        the
+                        most popular tourist attraction in Kanyakumari. Covering an area of six acres, the rock memorial
+                        is
+                        situated at an island a few metres into the sea and positioned at a level of 17 metres above the
+                        sea
+                        level. A meditation hall (Dhyana Mandapam) is also attached to the memorial for visitors to
+                        meditate. The design of the mandapa incorporates different styles of temple architecture from
+                        all
+                        over India. It houses a statue of Vivekananda.[18] The rocks are surrounded by the Laccadive
+                        Sea.
+                    </p>
+
+
+
+                    <br>
+                    <h2>Thiruvalluvar Statue</h2><br>
+                    <div class="photo"><img src="photos/Thiruvalluvar Statue.jpg" width="1000px" height="700px" ALIGN="center"><br><br></div>
+
+                    <p>
+                        The Thiruvalluvar Statue has a height of 29 metres (95 feet) and stands upon a 11.5-metre (38
+                        ft)
+                        rock that represents the 38 chapters of "virtue" in the Thirukkural. The statue standing on the
+                        rock
+                        represents "wealth" and "pleasures", signifying that wealth and love be earned and enjoyed on
+                        the
+                        foundation of solid virtue.[15] The combined height of the statue and pedestal is 133 ft (40.5
+                        m),
+                        denoting the 133 chapters in the Thirukkural. During maintenance work, as well as during rough
+                        sea,
+                        entry is restricted for tourists.
+                    </p>
+                    <br>
+                    <h2>Gandhi Memorial</h2><br>
+                    <div class="photo"><img src="photos/mahatma-gandhi-memorial-mandapam-kanyakumari.jpg" width="1000px" height="700px" ALIGN="center"><br><br></div>
+
+                    <p>
+                        The Gandhi Memorial is yet another structure that draws a lot of eyes. The Gandhi Memorial
+                        Mandapam
+                        has been built on the spot where the urn containing the Mahatma's ashes was kept for public
+                        viewing
+                        before immersion. Resembling central Indian Hindu temples in form, the memorial was designed in
+                        a
+                        way that on Gandhi's birthday, 2 October, the first rays of the sun fall on the exact place
+                        where
+                        his ashes were kept.
+                    </p>
+                    <br>
+                    <h2>Kanyakumari Wax Museum </h2>
+
+                    <p>
+                        History buffs can have a good time at Kanyakumari Wax Museum. Set within the premises of Bay
+                        Watch
+                        (Water Theme Amusement Park), the Kanyakumari Wax Museum is an unmissable attraction for
+                        tourists
+                        visiting this beautiful city. Built in line with London's Madam Tussauds Wax Museum, this unique
+                        attraction displays wax statues of renowned personalities.
+                    </p>
+                    <br>
+                    <h2>Beaches and Waterfalls</h2><br>
+                    <div class="photo"><img src="photos/Thriparappu_falls.jpg" width="1000px" height="700px" ALIGN="center"><br><br></div>
+                    <p>
+                        Other major travel places at Kanyakumari include a host of beautiful beaches including
+                        Sothavilai
+                        Beach, Sanguthurai Beach and of course the main Kanyakumari Beach. Kanyakumari Beach is one of
+                        the
+                        most pristine beaches in the waterfront town of Kanyakumari. It is located at the confluence of
+                        the
+                        Bay of Bengal, Arabian Sea and Indian Ocean. Beauty oozes here in the form of soft golden sand
+                        that
+                        is overlapped by shimmering waters of the endless sea. Thirparappu Waterfalls are waterfalls in
+                        Kanyakumari District. It is also known as 'Courtallam of Kanyakumari'.
+                    </p>
+                    <br>
+
+                </div>
+                <div class="scroll" id="5">
+                    <h2>Best time to Visit</h2>
+                    <br>
+                    <p>
+                        The ideal time to visit Kanyakumari is between the months of December to February when you can
+                        go
+                        sightseeing and participate in water adventures at the beach.
+                        Winter Season (December-February) is the best suitable season as during this period, you will
+                        find
+                        the climate on the pleasant side. Winters are mainly on the pleasant side in Rameshwaram as
+                        minimum
+                        temperature usually touches nearly 17° C during this season.
+                    </p>
+                </div><br>
+
+                <div class="scroll" id="3">
+                    <h2>About Food</h2>
+                    <br>
+                    <p>
+                        Rice is the staple food of Kanyakumari and is eaten along with chicken curry, pulses, and more.
+                        Kothu, Appam, Pazha Sarbath, and Maravazhi Kilangu are some of the most famous food items in
+                        Kanyakumari.
+
+                        The Nungu Sarbath is a must try during the summers at Kanyakumari. This cool and refreshing
+                        drink is
+                        made from palm fruits mixed with Sarbath topped off with some chilling ice.
+
+                        Many varieties of jackfruits are found in Kanyakumari. The colour of some of these fruits is red
+                        while some are yellow.
+                    </p>
+                    <br>
+                </div>
+
+                <div class="scroll" id="4">
+                    <h2>Transportation Facility</h2>
+                    <br>
+                    <div class="transport">
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/aeroplane.png" alt="travelimage">
+                            </div>
+                            <h3>By Air</h3>
+                            <p>Located at a distance of about 67 kilometres, the nearest airport to Kanyakumari is the
+                                Trivandrum International Airport. </p>
+                        </div>
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/train1.jpg" alt="travelimage">
+                            </div>
+                            <h3>By Rail</h3>
+                            <p>The Kanyakumari Railway Station (CAPE) is located at a distance of 4 kilometers from the
+                                central bus stand. The other nearest railway stations include Nagercoil station (18
+                                kilometers) and Thiruvananthapuram Central (85 kilometers). </p>
+                        </div>
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/road1.jpg" alt="travelimage">
+                            </div>
+                            <h3>By Road</h3>
+                            <p>Kanyakumari is connected to the major cities like Trivandrum (86 kilometers), Nagarkoil
+                                (19
+                                kilometers), Tirunelveli (91 kilometers), Poovar (66 kilometers) and Kovalam (82
+                                kilometers). </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="scroll" id="5">
+                    <h2>Best time to Visit</h2>
+                    <br>
+                    <p>
+                        The ideal time to visit Kanyakumari is between the months of December to February when you can
+                        go
+                        sightseeing and participate in water adventures at the beach.
+                        Winter Season (December-February) is the best suitable season as during this period, you will
+                        find
+                        the climate on the pleasant side. Winters are mainly on the pleasant side in Rameshwaram as
+                        minimum
+                        temperature usually touches nearly 17° C during this season.
+                    </p>
+                </div> -->
+                <div class="scroll" id="6">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63202.365603574566!2d77.51093665385258!3d8.086400516836227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b04ed3d2a087861%3A0x1e790e896aeffaa0!2sKanyakumari%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1647494100039!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

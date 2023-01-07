@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Manali
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        .manali p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+
+
+        }
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        .manali img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 35px;
+        }
+
+        .info p{
+            font-size: 20px;
+            color: black;
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+
+    </style>
+
+
+
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div>
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="photos/logob.png" width="130px" height="130px">
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <ul>
+
+                    <li><a href="about.html"></i>About Us</a></li>
+                    <li><a>Destination</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="North.html" target="_blank">North</a></li>
+                                <li><a href="South.html" target="_blank">South</a></li>
+                                <li><a href="East.html" target="_blank">East</a></li>
+                                <li><a href="West.html" target="_blank">West</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="review.html">Review</a></li>
+
+
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </button></a>
+                <script>
+                    function openPage() {
+                        var x = document.getElementById("search").value;
+                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                        if (x === "") { window.open(".html") };
+
+
+
+                    }
+                </script>
+
+            </div>
+        </div>
+        <br>
+        
+        <section>
+
+
+            <div class="manali">
+                <img src="photos/manali1.jpg" width="1000px" height="600px"
+                    ALIGN="left"><br><br><br><br><br><br><br><br><br><br>
+                <h1 ALIGN="RIGHT">
+                    Manali
+                </h1>
+                <h3>Himachal Pradesh</h3>
+                <br>
+                <br>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a class="bar" href="#1">About the city</a>
+                <a class="bar" href="#2">Places to visit</a>
+                <a class="bar" href="#3">About food</a>
+                <!-- <a class="bar" href="#4">Places to stay</a> -->
+                <a class="bar" href="#5">Transportation facility</a>
+                <a class="bar" href="#6">Best time to visit</a>
+                <a class="bar" href="#7">Map</a>
+
+    <div class="info">
+                <div class="scroll" id="1">
+                    <p>
+
+                    <br>
+                    <br>
+                    <h2>About the city</h2>
+                    <br>
+                    <p>
+                        Manali is a town in the Indian state of Himachal Pradesh. It is situated in the northern end of the Kullu Valley, formed by the Beas River. The town is located in the Kullu district, approximately 270 kilometres north of the state capital of Shimla and 544 kilometres northeast of the national capital of Delhi. With a population of 8,096 people recorded in the 2011 Indian census Manali is the beginning of an ancient trade route through Lahaul and Ladakh, over the Karakoram Pass and onto Yarkand and Hotan in the Tarim Basin of China. Manali is a popular tourist destination in India and serves as the gateway to the Lahaul and Spiti district as well as the city of Leh in Ladakh.
+                    </p>
+                </div>
+                <br><br>
+
+                <div class="scroll" id="2">
+                    <h2>Places to visit</h2>
+                    <br><br>
+                    <h2>Rohtang pass</h2>
+                    <img src="photos/Rohru.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                    <p>Rohtang Pass is a high mountain pass on the eastern end of the Pir Panjal Range of the Himalayas around 51 km from Manali in the Indian state of Himachal Pradesh. It connects the Kullu Valley with the Lahaul and Spiti Valleys of Himachal Pradesh, India. </p><br>
+                    <h2>Solang valley</h2>
+                    <img src="photos/Solang-Valley.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                    <p>Solang Valley also known as the 'snow point' is an alluring snow clad utopia near Manali and lies between Solang village and Beas Kund. Situated at an altitude of 8,500 feet above sea level, it offers a spectacular scenery of enchanting glaciers and snow crest mountain peaks.</p><br>
+                    <h2>Hadimba temple</h2>
+                    <img src="photos/hadimba temple.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                    <p>The Hidimba Devi temple was built in 1553 CE by Maharaja Bahadur Singh. ... Born into a Rakshasa family, Hidimba vowed to marry one who would defeat her brother Hidimb, who was supposed to be very brave and fearless. During the Pandava's exile, when they visited Manali; Bhima, one of the five Pandavas, killed Hidimb.</p><br>
+                    <h2>Tibetan Monasteries</h2>
+                    <img src="photos/tibetan.jpg" width="1300px" height="700px" ALIGN="center" ><br><br>
+                    <p>Manali is also the home of Tibetan Monasteries and among them, Himalayan Nyingmapa Gompa and Gadhan Thekchhokling Gompa are the most famous. These monasteries are built by Tibetan refugees and are a must visit for anyone wanting to get a glimpse of their culture. The monasteries are built Pagoda style and house a shrine of Lord Buddha.</p><br>
+                    <h2>Great Himalayan National Park</h2>
+                    <img src="photos/great himalayn park.png" width="1300px" height="700px" ALIGN="center" ><br><br>
+                    <p>UNESCO World Heritage Site, Great Himalayan National Park is a haven for all nature lovers and wildlife enthusiasts. The flora and fauna here are known for their diversity with the park being home to more than 375 faunal species and many of them are endangered. The biodiversity here is unique in India due to the presence of The Himalayas nearby and therefore this park is governed is strictly. Visitors can also enjoy a scenic views of the nearby valley and mountain passes.</p>
+                    <br>
+                    <br>
+
+                </div>
+
+                <div class="scroll" id="6">
+                    <h2>Best time to Visit</h2>
+                    <br>
+                    <p>
+                        October to June is the best time to visit Manali.
+                        With bright, colourful flowers in full bloom and a pleasant climate with temperatures ranging between 10 degree Celsius and 25 degree Celsius. December to February is the best time to experience snowfall in Manali.
+                        
+                    </p>
+                </div>
+                <br><br>
+                <div class="scroll" id="3">
+                    <h2>About Food</h2>
+                    <br>                    <p>
+                        The traditional Manali meal includes steamed rice, curry or cooked beaten curd, madra (a curd based dish), pulses, and raita (a mixture made of mustard, dry fruits, and sweet rice).
+                        Kulu. Southindian dish made with rice and flour cooked together till it's a paste than mixed with yogurt and salt. You can add onions if you like. Served with murangai leaves and potato, eggplant and dry fish curry.
+                        
+                    </p>
+                    <br>
+                </div>
+
+                <!-- <div class="scroll" id="4">
+                    <h2> Places to stay </h2>
+                </div> -->
+
+                <!-- <div class="scroll" id="5">
+                    <h2>Transportation Facility</h2>
+                    <br>
+                    <ul>
+                        <li>
+                            <h3>BY AIR</h3>
+                            <p>
+
+                                Kullu Airport which is known as Bhuntar airport is located in Bhuntar, in the state Himachal Pradesh. This airport is considered as a challenging airport for the pilots due to its single runway which is set in a deep valley.                            
+                            </p>
+                            <br>
+                        </li>
+                        <li>
+                            <h3>By RAIL</h3>
+                            <p>
+                                Jogindernagar railway station is the nearest railhead to Manali that connects the hill station with several important cities of the country. Chandigarh and Ambala are other options to reach Manali by train. From the railheads, one can get several mode of transportation including taxi and bus at reasonable cost.                            </p>
+                            <br>
+                        </li>
+                        <li>
+                            <h3>BY ROAD</h3>
+                            <p>
+                                The State Highway 4 that connects the National Highway 21, en route Ambala and Chandigarh is the most reliable route. The distance from Chandigarh to Manali is approximately 310kms.
+                            </p>
+                            <br>
+                        </li>
+                    </ul>
+
+                </div> -->
+
+                <div class="scroll" id="5">
+                    <h2>Transportation Facility</h2>
+                    <br>
+                    <div class="transport">
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/aeroplane.png" alt="travelimage">
+                            </div>    
+                            <h3>By Air</h3>
+                            <p>
+                                Kullu Airport which is known as Bhuntar airport is located in Bhuntar, in the state Himachal Pradesh. This airport is considered as a challenging airport for the pilots due to its single runway which is set in a deep valley. </p>
+                        </div>
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/train1.jpg" alt="travelimage">
+                            </div>
+                            <h3>By Rail</h3>
+                            <p>
+                                Jogindernagar railway station is the nearest railhead to Manali that connects the hill station with several important cities of the country. Chandigarh and Ambala are other options to reach Manali by train. From the railheads, one can get several mode of transportation including taxi and bus at reasonable cost. </p>
+                        </div>
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/roadimg.png" alt="travelimage">
+                            </div>
+                            <h3>By Road</h3>
+                            <p>
+                                The State Highway 4 that connects the National Highway 21, en route Ambala and Chandigarh is the most reliable route. The distance from Chandigarh to Manali is approximately 310kms. 
+                                </p>
+                        </div>
+                    </div>
+                    </div>
+
+                <!-- <div class="scroll" id="6">
+                    <h2>Best time to Visit</h2>
+                    <br>
+                    <p>
+                        October to June is the best time to visit Manali.
+                        With bright, colourful flowers in full bloom and a pleasant climate with temperatures ranging between 10 degree Celsius and 25 degree Celsius. December to February is the best time to experience snowfall in Manali.
+                        
+                    </p>
+                </div> -->
+
+
+
+                <div class="scroll" id="7">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53995.066902104314!2d77.15218610811964!3d32.239467244722825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39048708163fd03f%3A0x8129a80ebe5076cd!2sManali%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1647494306818!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+    </div>
+
+        </section>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Sun Temple
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        .sunsubpage p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+            
+        
+        }
+
+        .menu ul li a{
+            color: black;
+
+        }
+
+        .sunsubpage img{
+         padding-left: 30px;
+         padding-top: 30px;
+        }
+        .srch{
+            border: 1px solid black;
+            color: black;
+        }
+        .btn{
+            border: 2px solid black;
+            color: black;
+        }
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        .scroll h2 {
+            color: black;
+
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: rgb(0, 0, 0);
+            align-items: center;
+            padding-left: 5px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 80px;
+
+        }
+        
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+        ul li a:hover{
+    color: rgb(219, 98, 154);
+    text-decoration: underline;
+    padding-bottom: 5px;
+    text-decoration-color: rgb(219, 98, 154);
+    
+    
+  }
+    </style>
+
+</head>
+           <body  bgcolor="#F5CEC7">
+            
+                <div class="navbar">
+                    <div class="icon">
+                        <a href="index.html">
+                        <img src="photos/logob.png" width="130px" height="130px">
+                    </a>
+                    </div>
+    
+                    <div class="menu">
+                        <!--menu bar-->
+                        <ul>
+    
+                            <li><a href="about.html"></i>About Us</a></li>
+                            <li><a>Destination</a>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="North.html" target="_blank">North</a></li>
+                                        <li><a href="South.html" target="_blank">South</a></li>
+                                        <li><a href="East.html" target="_blank">East</a></li>
+                                        <li><a href="West.html" target="_blank">West</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="review.html">Review</a></li>
+    
+    
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input class="srch" type="search"  id="search" onchange="openPage()" value="" name="" placeholder="">
+                        <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                       d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg> </button></a>
+                                <script>
+                                    function openPage() {
+                                        var x = document.getElementById("search").value;
+                                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+            
+                                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+            
+                                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+            
+                                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+            
+            
+                                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+            
+                                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                                        if (x === "") { window.open(".html") };
+            
+            
+            
+                                    }
+                                </script>
+            
+                    </div>
+                </div>
+                    <br>
+
+            <section>
+
+             
+            <div class="sunsubpage" >
+                <img src="photos/Sun temple.jpg" width="1000px" height="600px" ALIGN="left"><br>
+                   <h1 ALIGN="right"><br><br><br>
+                    <pre>       Sun Konark Temple</pre>
+                   </h1>
+                   
+                 <h2>Odisha</h2>
+                 <br><br>
+                 <br>
+                 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                 <a class="bar" href="#abouttheplace">About the place</a>
+                 <a class="bar" href="#besttimetovisit">Best time to visit</a> 
+                 <a class="bar" href="#ticket">Ticket price</a>
+                 <a class="bar" href="#thingstosee">Things to see</a>
+                 <a class="bar" href="#transportation">Transportation</a>
+                
+                 
+               
+                 <br><br><brr><br>
+                 
+               
+                 <div class="scroll" id="abouttheplace">
+                    <h2>About the place</h2>
+                    <br>
+                    <p>
+                        The Konark or Konarak Sun temple is dedicated to the Hindu sun god Surya, and, conceived as a giant stone chariot with 12 wheels, 
+                       <br> it is the most famous of the few sun temples built in India. It is located about 35 km northeast of the city of Puri on the <br>coastline in the state of Odisha (earlier Orissa).
+                         It was built c. 1250 CE by King Narasimhadeva I (r. 1238-1264 CE) of the Eastern Ganga dynasty (8th century CE - 15th century CE). 
+                        <br> The temple in its present state was declared by UNESCO a World Heritage Site in 1984 CE. 
+                        <br> Although many portions are now in ruins, what remains of the temple complex continues to draw not only tourists<br> but also Hindu pilgrims. 
+                        Konarak stands as a classic example of Hindu temple architecture, complete with a colossal structure,<br> sculptures and artwork on myriad themes.
+    
+                    </p>
+                    <br>
+                </div>
+                
+                <div class="scroll" id="besttimetovisit">
+    
+                    <br>
+                    <h2>Best Time to Visit</h2>
+                    <br>
+                    <p>Being a coastal destination, the weather in Konark is the most pleasant during winters. 
+                    <br>The best time to visit this place is during the months of September-March. 
+                    <br>Summers are very hot and humid and should be avoided.
+    
+                    </p><br>
+                </div>
+               
+                <div class="scroll" id="ticket">
+                    <br>
+                    <h2>
+                        Konark Sun Temple Ticket Information
+                    </h2>
+                    <br>
+                    <p>
+                        The Konark Sun Temple ticket can be purchased at Rs 40 for Indians whereas if you are a foreigner then you have to pay Rs 600. 
+                        <br>The entry fee for Konark Temple for BIMSTEC and SAARC citizens is Rs 40. 
+                        <br>The entry tickets to Konark Sun Temple for the light and show can be bought at the venue. 
+                        <br>The visitors are provided wireless headphones and they have a choice between three languages: English, Hindi and Odiya.
+                         <br>It is an hour long show starting at 7 pm. The ticket price is Rs 30 per person.
+    
+                    </p>
+                </div><br><br>
+                <div class="scroll" id="thingstosee">
+    
+                    <br>
+                    <h2>Things to see in Konark temple complex</h2>
+                    <br>
+                    <p>The remains of the main temple tower and the Simhasana(Seat) of the Presiding Deity.
+                    <br>The Jagamohana (also known as Assembly hall, Audience hall or Mukhasala) and the geometrical patterns all around it.
+                        <br>The carved wheels and the spokes of the wheel which serve as sun dials.
+                        <br>Architectural figures including the war horses, the war elephants, the Gaja-Simha(guarding lions at the entrance) and the seven horses those are pulling the chariot.
+                        <br>The roofless Nata Mandapa (Dancing Hall) and its 16 (4 x 4) pillars, all gorgeously craved with dancers and musicians.
+                        <br>The remaining parts of the Bhoga Mandapa (Kitchen).
+                        <br>Remains of the Mayadevi temple, which is believed to be the ancient Sun temple.
+                        <br>Remains of the Vaishnava temple that contains the figures of different Hindu Deities like Varaha, Balarama and Vamana-Trivikrama.
+                        <br>Three images of Sun God at three direction of the temple to catch the rays of the Sun at morning, noon and evening.
+    
+                    </p><br>
+                </div>
+                <div class="scroll" id="transportation">
+                    <h2>Transportation</h2>
+                   
+                    <div class="transport">
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/aeroplane.png" alt="travelimage">
+                            </div>
+                            <h3>By Air</h3>
+                            <p>Konark Sun Temple is 62 km away (1 hour 39 minutes) from the Biju Patnaik International Airport in Bhubaneshwar. 
+                               You can hire a prepaid taxi from the airport counter or take a bus from outside the airport to reach the temple. </p>
+                        </div>
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/train1.jpg" alt="travelimage">
+                            </div>
+                            <h3>By Rail</h3>
+                            <p>The Puri railway station is the nearest train station to Konark Sun Temple at 36 km distance. 
+                                You can find numerous taxis and cabs outside the railway station to take you to the Sun Temple. 
+                                It approximately takes 50 minutes to reach. </p>
+                        </div>
+                        <div class="travel">
+                            <div class="trimg">
+                                <img src="photos/roadimg.png" alt="travelimage">
+                            </div>
+                            <h3>By Road</h3>
+                            <p> The nearest bus stand is Konark Bus stand which is 6 minutes away. 
+                                There are private as well as public bus operators like OSRTC, Dolphin Tour and Travels, Shyamoli Paribahan Pvt. Ltd, Diwakar Travels etc.
+                                 which take you to the Sun Temple. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53128.2186850803!2d75.22405617910158!3d33.66976119999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e20bb4d4a16bab%3A0xa950012d44e54ff0!2sSun%20Temple!5e0!3m2!1sen!2sin!4v1647494586035!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+            </div>  
+
+
+            </section>
+
+
+            
+    
+    
+
+
+
+
+
+
+    </html>

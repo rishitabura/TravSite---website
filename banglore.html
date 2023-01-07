@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Bangalore
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        .banglore p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .banglore h2 {
+            color: black;
+            font-size: 25px;
+        }
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        .banglore img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: black;
+            align-items: center;
+            padding-left: 10px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 35px;
+        }
+
+        .info p {
+            font-size: 20px;
+            color: black;
+        }
+
+        .places img {
+            height: 700px;
+            width: 1000px;
+            margin-left: 125px;
+        }
+        ul li a:hover {
+            color: rgb(219, 98, 154);
+            text-decoration: underline;
+            padding-bottom: 5px;
+            text-decoration-color: rgb(219, 98, 154);
+
+
+        }
+
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body bgcolor="#F5CEC7">
+    <div>
+        <div class="navbar">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="photos/logob.png" width="130px" height="130px">
+                </a>
+            </div>
+
+            <div class="menu">
+
+                <ul>
+
+                    <li><a href="about.html"></i>About Us</a></li>
+                    <li><a>Destination</a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="North.html" target="_blank">North</a></li>
+                                <li><a href="South.html" target="_blank">South</a></li>
+                                <li><a href="East.html" target="_blank">East</a></li>
+                                <li><a href="West.html" target="_blank">West</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="review.html">Review</a></li>
+
+
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+                <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg> </button></a>
+                <script>
+                    function openPage() {
+                        var x = document.getElementById("search").value;
+                        if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                        if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                        if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                        if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                        if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                        if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                        if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                        if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                        if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                        if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                        if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                        if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                        if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                        if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                        if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                        if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                        if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                        if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                        if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                        if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                        if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                        if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                        if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                        if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                        if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                        if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                        if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                        if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                        if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                        if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                        if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                        if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                        if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                        if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                        if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                        if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                        if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                        if (x === "") { window.open(".html") };
+
+
+
+                    }
+                </script>
+
+            </div>
+        </div>
+        <br>
+
+        <section>
+
+
+            <div class="banglore">
+                <img src="photos/banglore1.jpg" width="1000px" height="600px"
+                    ALIGN="left"><br><br><br><br><br><br><br><br><br><br>
+                <h1 ALIGN="RIGHT">
+                    <pre>   Bangalore</pre>
+                </h1>
+                <h2>Karnataka</h2>
+                <br>
+                <br>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <a class="bar" href="#1">About the city</a>
+                <a class="bar" href="#2">Places to visit</a>
+                <a class="bar" href="#5">Best time to visit</a>
+                <a class="bar" href="#3">About food</a>
+                <a class="bar" href="#4">Transportation facility</a>
+                
+                <a class="bar" href="#6">Map</a>
+                <br><br><br><br>
+                <div class="info">
+                    <div class="scroll" id="1">
+
+                        <h2>About The City</h2>
+                        <p>
+
+                            Bangalore is famous being the Silicon Valley of India, Karnataka's capital city is a well
+                            known IT hub and some of the world's major It corporations operate out of the city. Apart
+                            from MNCs, Bangalore is also home to many startups and Indian tech companies. Bangalore,
+                            also known as Bengaluru (Kannada) is the capital of the Indian State of Karnataka. Bangalore
+                            is nicknamed the Garden City and was once called a Pensioner's Paradise. Located on the
+                            Deccan Plateau in the south-eastern part of Karnataka, Bangalore is India's third most
+                            populous city.<br>
+                            Bangalore leads for quality of living and personal safety standards, a measure of stability
+                            and crime levels. It has a population of over ten million, making it a megacity and the
+                            Third populous City and 5th most populous urban agglomeration in India.
+                        </p>
+                    </div>
+                    <br>
+                    <!-- <div class="scroll" id="5">
+                        <h2>Best time to Visit</h2>
+                        <br>
+                        <p>
+                            October to February: The winter months in Bangalore are the best time to visit the city.
+                            March to May: While winters are over, the temperature is still pleasant.
+                            June to September: Monsoons begin by the end of May and come with mild to heavy rainfall.
+                        </p>
+                    </div> -->
+                    <br><br>
+
+                    <div class="scroll" id="2">
+                        <h2>Places to visit</h2>
+                        <br><br>
+                        <h2>Cubbon Park</h2>
+                        <div class="places">
+                            <img src="photos/CubbonPark.jpg">
+                        </div>
+
+                        <p>Cubbon Park, also known as Sri Chamarajendra Park is one of the famous landmarks of
+                            Bangalore. The park covers a land of 300 acres with abundant flora and fauna coupled with
+                            various aesthetically located statues and buildings of renowned personages within its
+                            precincts. Surrounded by massive green lawns and huge trees, this is one of the magical
+                            places to see. The park becomes even more mesmerizing to see during evenings after the
+                            beautiful lights are turned on.</p><br>
+
+                        <h2>Nandi Hills</h2>
+                        <div class="places">
+                            <img src="photos/NANDI-HILLS.jpg">
+                        </div>
+
+                        <p>Nandi Hills is one of the perfect places near Bangalore for nature lovers. The hill station
+                            is situated 60 kilometers from the city’s center and offers a fantastic view of monolithic
+                            granite figure. The pleasant weather has particularly made it an interesting weekend
+                            destination to horticulturists. The vegetation is typically good when it comes to hills.
+                            Besides this, at the summit, one is sure to find large exotic trees like the Eucalyptus,
+                            Coffee Arabica with a few other native species.</p><br>
+
+
+                        <h2>Tipu Sultan’s Palace</h2>
+                        <div class="places">
+                            <img src="photos/Tipu sultan.jpg">
+                        </div>
+
+                        <p>The royal summer fort of the popular king “Tipu Sultan” is now transformed into a beautiful
+                            museum, and is certainly one of the best places to visit in Bangalore with kids. With old
+                            paintings, magnificent figures, and other remarkable artworks, this palace has gained a lot
+                            of popularity in the recent decades. Despite being a renowned historical construction, one
+                            of the unique features of the fort is that it is built using pure teakwood, something that
+                            is rare to see in today’s world.</p><br>
+
+                        <h2>National Gallery Of Modern Art</h2>
+                        <div class="places">
+                            <img src="photos/NGOMA2.jpg">
+                        </div>
+
+                        <p>A good place to see in Bangalore with friends and family is the National Gallery of Modern
+                            Art. Established in 2009, the gallery displays some of the extraordinary house paintings and
+                            modern art created by popular contemporary artists. It houses about 500 exhibits, which are
+                            spread across spacious halls, tiny rooms, and corridors.</p><br>
+
+                        <h2>Bangalore Palace</h2>
+                        <div class="places">
+                            <img src="photos/bangalore palace.jpg">
+                        </div>
+
+                        <p>Bangalore palace is located within 200 kms from the city and is a great place to spend time.
+                            Originally owned by Rev. J. Garrett, the Bangalore Palace is one of the best historical
+                            places to see. The interiors of this palace speak for itself. There is a grand ballroom to
+                            hold private parties. The ground floor has an exposed courtyard with granite seats enclosed
+                            in fluorescent blue porcelain tiles. The walls of the fort are designed with
+                            nineteenth-century Dutch and Greek paintings.</p>
+                        <br>
+                        <br>
+
+                    </div>
+                    <div class="scroll" id="5">
+                        <h2>Best time to Visit</h2>
+                        <br>
+                        <p>
+                            October to February: The winter months in Bangalore are the best time to visit the city.
+                            March to May: While winters are over, the temperature is still pleasant.
+                            June to September: Monsoons begin by the end of May and come with mild to heavy rainfall.
+                        </p>
+                    </div><br>
+
+
+                    <div class="scroll" id="3">
+                        <h2>About Food</h2>
+                        <p>
+                            Rice is a staple crop.<br>
+                            Halbai is an exotic and a unique delicacy loved by all.
+                            Idlis, Vadas, and Dosas. Ask any South Indian what would be their ideal breakfast and
+                            they'll probably say dosa or idli and vada.
+                            Mangalore Buns and Obbattu are a must try too.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="scroll" id="4">
+                        <h2>Transportation Facility</h2>
+                        <br>
+                        <div class="transport">
+                            <div class="travel">
+                                <div class="trimg">
+                                    <img src="photos/aeroplane.png" alt="travelimage">
+                                </div>
+                                <h3>By Air</h3>
+                                <p>There is only one Civilan airport in Bangalore. That is Kempegowda International
+                                    Airport. The same airport operates domestic as well as international flights. </p>
+                            </div>
+                            <div class="travel">
+                                <div class="trimg">
+                                    <img src="photos/train1.jpg" alt="travelimage">
+                                </div>
+                                <h3>By Rail</h3>
+                                <p>Krantivira Sangolli Rayanna is the main railway station serving the city of
+                                    Bangalore, Karnataka, India. It is the busiest railway station in South Western
+                                    Railway zone of Indian Railways. </p>
+                    div>
+                        </div>
+                    </div>
+                    <!-- <div class="scroll" id="5">
+                        <h2>Best time to Visit</h2>
+                        <br>
+                        <p>
+                            October to February: The winter months in Bangalore are the best time to visit the city.
+                            March to May: While winters are over, the temperature is still pleasant.
+                            June to September: Monsoons begin by the end of May and come with mild to heavy rainfall.
+                        </p>
+                    </div> -->
+
+
+
+                    <div class="scroll" id="6">
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995401.7782097742!2d77.07182503471095!3d12.953401428336146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1647493711260!5m2!1sen!2sin"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+
+    </div>
+</body>
+
+</html>

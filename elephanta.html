@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Elephanta Caves
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="logoweb.png" type="image/icon type">
+    <style>
+        .elesubpage p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+            margin-left: 50px;
+            margin-right: 50px;
+
+
+        }
+
+        .menu ul li a {
+            color: black;
+
+        }
+
+        .elesubpage img {
+            padding-left: 30px;
+            padding-top: 30px;
+        }
+
+        .srch {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .btn {
+            border: 2px solid black;
+            color: black;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .scroll p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .scroll h2 {
+            color: black;
+
+        }
+
+        .bar {
+            display: inline;
+            padding: 6px;
+            color: rgb(0, 0, 0);
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 28px;
+            text-decoration: none;
+            border: 3px solid black;
+            margin-left: 120px;
+
+        }
+        
+        .menu ul li:hover .sub-menu {
+            display: block;
+            position: absolute;
+            background: #F5CEC7;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+        ul li a:hover{
+    color: rgb(219, 98, 154);
+    text-decoration: underline;
+    padding-bottom: 5px;
+    text-decoration-color: rgb(219, 98, 154);
+    
+    
+  }
+    </style>
+
+</head>
+
+<body  bgcolor="#F5CEC7">
+
+    <div class="navbar">
+        <div class="icon">
+            <a href="index.html">
+                <img src="photos/logob.png" width="130px" height="130px">
+            </a>
+        </div>
+
+        <div class="menu">
+            <!--menu bar-->
+            <ul>
+
+                <li><a href="about.html"></i>About Us</a></li>
+                <li><a>Destination</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="North.html" target="_blank">North</a></li>
+                            <li><a href="South.html" target="_blank">South</a></li>
+                            <li><a href="East.html" target="_blank">East</a></li>
+                            <li><a href="West.html" target="_blank">West</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="review.html">Review</a></li>
+
+
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" id="search" onchange="openPage()" value="" name="" placeholder="">
+            <a href="#"><button class="btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg> </button></a>
+            <script>
+                function openPage() {
+                    var x = document.getElementById("search").value;
+                    if (x === "wildlife" || x === "Wildlife" || x === "WILDLIFE") { window.open("wildlife.html") };
+                    if (x === "kaziranga" || x === "Kaziranga" || x === "KAZIRANGA") { window.open("kaziranga.html") };
+                    if (x === "kanha" || x === "Kanha" || x === "KANHA") { window.open("kanha.html") };
+                    if (x === "manas" || x === "Manas" || x === "MANAS") { window.open("manas.html") };
+                    if (x === "jim corbett" || x === "Jim Corbett" || x === "JIM CORBETT") { window.open("jimcorbett.html") };
+
+                    if (x === "heritage" || x === "Heritage" || x === "HERITAGE") { window.open("heritage.html") };
+                    if (x === "agrafort" || x === "Agrafort" || x === "AGRAFORT") { window.open("agrafort.html") };
+                    if (x === "chola" || x === "Chola" || x === "Chola Temple" || x === "chola temple" || x === "CHOLA TEMPLE") { window.open("cholatemple.html") };
+                    if (x === "elephanta" || x === "Elephanta" || x === "Elephanta Caves" || x === "elephanta caves" || x === "ELEPHANTA CAVES") { window.open("elephanta.html") };
+                    if (x === "sun" || x === "Sun" || x === "Sun Konark Temple" || x === "sun konark temple" || x === "SUN KONARK TEMPLE") { window.open("sun.html") };
+                    if (x === "hampi" || x == "HAMPI" || x == "Group of monuments") { window.open("hampi.html") };
+                    if (x === "ajanta" || x == "Ajanta" || x == "Ajanta Caves" || x == "ajanta caves") { window.open("ajanta.html") };
+
+                    if (x === "hill stations" || x === "Hill Stations") { window.open("hillstations.html") };
+                    if (x === "shimla" || x === "Shimla" || x == "SHIMLA") { window.open("shimla.html") };
+                    if (x === "mahabaleshwar" || x === "Mahabaleshwar") { window.open("mahabaleshwar.html") };
+                    if (x === "amboli" || x === "Amboli" || x === "AMBOLI") { window.open("amboli.html") };
+                    if (x === "kausani" || x === "Kausani" || x === "KAUSANI") { window.open("kausani.html") };
+                    if (x === "srinagar" || x === "Srinagar" || x === "SRINAGAR") { window.open("srinagar.html") };
+                    if (x === "nainital" || x === "Nainital" || x === "NANITAL") { window.open("nainital.html") };
+                    if (x === "ooty" || x === "Ooty" || x === "OOTY") { window.open("ooty.html") };
+
+                    if (x === "cities" || x === "Cities" || x === "CITIES") { window.open("cities.html") };
+                    if (x === "ahmedabad" || x === "Ahmedabad" || x === "AHMEDABAD") { window.open("ahmedabad.html") };
+                    if (x === "kolkata" || x === "Kolkata" || x === "KOLKATA") { window.open("kolkata.html") };
+                    if (x === "banglore" || x === "Banglore" || x === "BANGLORE") { window.open("banglore.html") };
+                    if (x === "chennai" || x === "Chennai" || x === "CHENNAI") { window.open("chennai.html") };
+                    if (x === "delhi" || x === "Delhi" || x === "DELHI") { window.open("delhi.html") };
+                    if (x === "hyderabad" || x === "Hyderabad" || x === "HYDERABAD") { window.open("Hyderabad.html") };
+                    if (x === "jaipur" || x === "Jaipur" || x === "JAIPUR") { window.open("jaipur.html") };
+                    if (x === "kanyakumari" || x === "Kanyakumari" || x === "KANKYAKUMARI") { window.open("kanyakumari.html") };
+                    if (x === "manali" || x === "Manali" || x === "MANALI") { window.open("manali.html") };
+                    if (x === "mumbai" || x === "Mumbai" || x === "MUMBAI") { window.open("mumbai.html") };
+                    if (x === "pune" || x === "Pune" || x === "PUNE") { window.open("pune.html") };
+
+
+                    if (x === "east" || x === "ast" || x === "EAST") { window.open("East.html") };
+                    if (x === "north" || x === "North" || x === "NORTH") { window.open("north.html") };
+                    if (x === "south" || x === "South" || x === "SOUTH") { window.open("south.html") };
+                    if (x === "west" || x === "West" || x === "WEST") { window.open("west.html") };
+
+                    if (x === "review" || x === "Review" || x === "REVIEW") { window.open("review.html") };
+                    if (x === "") { window.open(".html") };
+
+
+
+                }
+            </script>
+
+        </div>
+    </div>
+    <br>
+
+    <section>
+
+
+        <div class="elesubpage">
+            <img src="photos/elephanta caves.jpg" width="1000px" height="600px"
+                ALIGN="left"><br><br><br><br><br><br><br><br><br><br>
+            <h1 Align="right">
+                <pre>        Elephanta Caves</pre>
+            </h1>
+
+            <h2>Maharashtra</h2>
+            <br>
+            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <a class="bar" href="#abouttheplace">About the place</a>
+            <a class="bar" href="#besttimetovisit">Best time to visit</a>
+            <a class="bar" href="#ticket">Ticket Price</a>
+            <a class="bar" href="#transportation">Transportation</a>
+
+            <br><br><br>
+           
+            <br>
+
+
+            <div class="scroll" id="abouttheplace">
+                <h2>About the place</h2>
+                <br>
+                <p>
+                    Mumbai, the business capital of India, is known for its tourism. There are many historical monuments
+                    and sculptures in Mumbai which people visit to see <br>while on vacation.
+                    One such place is Elephanta Caves, located on an island just off the coast of Mumbai city.
+                    <br>These caves were built between the 5th-7th century AD by Hindu kings.
+                    The structure of these caves shows the perfect blending of Dravidian and Nagara styles of Hindu
+                    architecture.
+                    <br>This blend makes it one among few temples with two different styles of temple building existing
+                    side by side. It was originally called Gharapuri, but later it became popularly known as
+                    ‘Elephanta.’
+                    <br>The world heritage site is dedicated to Lord Shiva and has some fascinating rock-cut
+                    architecture and statues dating centuries back.
+
+                </p>
+                <br>
+            </div>
+           
+            <div class="scroll" id="besttimetovisit">
+
+                <br>
+                <h2>Best Time to Visit</h2>
+                <br>
+                <p>The best time to visit the caves would be from October to June when it remains relatively cool and
+                    dry.
+                    <br>The humidity levels during this time remain conducive enough for exploring the place.
+                    <br>Tourists should avoid visiting between July – September because heavy rainfall makes most parts
+                    of the island inaccessible.
+                    <br> Considering that the island is surrounded by sea, tourists may face problems in visiting places
+                    around Mumbai. If you are planning to visit in the monsoon season, it would be wise to carry an
+                    umbrella with you during your visit.
+
+                </p><br>
+            </div>
+           
+            <div class="scroll" id="ticket">
+                <br>
+                <h2>
+                    Entry fees and visiting timings at Elephanta Caves in Mumbai
+                </h2>
+                <br>
+                <p>
+                    The entry fee for Indian visitors is Rs 10 per head, while a ticket for foreign nationals will cost
+                    Rs 500.
+                    <br> No entry fee for children below 15 years of age.
+
+                    <br>The caves are open from 9 am – 5 pm every day, except on Fridays when it is closed.
+                    <br>However, the timings may vary slightly depending on the weather conditions, so tourists need to
+                    check before visiting.
+
+                </p>
+            </div><br><br>
+            <div class="scroll" id="transportation">
+                <h2>Transportation</h2>
+                
+                <div class="transport">
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/aeroplane.png" alt="travelimage">
+                        </div>
+                        <h3>By Air</h3>
+                        <p>Nearest Airport to the Elephanta Caves Chhatrapati Shivaji International Airport serves Mumbai and has a
+                             brilliant network with the capital of the country and other metro cities aside from 
+                             having great international connectivity. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/train1.jpg" alt="travelimage">
+                        </div>
+                        <h3>By Rail</h3>
+                        <p>Churchgate Railway Station is the nearest railway station from Elephanta Caves.
+                             One can take the local train to Churchgate and then hire a taxi to Gateway of India. </p>
+                    </div>
+                    <div class="travel">
+                        <div class="trimg">
+                            <img src="photos/roadimg.png" alt="travelimage">
+                        </div>
+                        <h3>By Road</h3>
+                        <p> The best way to reach the Elephanta caves is via Mumbai city. 
+                            Elephanta caves are nearly 25km from Mumbai and it takes 1 hour time.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="scroll" id="transportation">
+                <hr>
+
+                <br>
+                <h2>Transportation</h2>
+                <br>
+
+                <h3>By air</h3> <br>
+                <p>Chhatrapati Shivaji International Airport serves Mumbai and has a brilliant network with the capital
+                    of the country and other metro cities aside from having great international connectivity.
+                    <br>You have frequent direct flights from Delhi, Bangalore, Hyderabad, Chennai, Jaipur, Ahmedabad,
+                    and Kolkata to Mumbai.
+                    <br>Some popular domestic and international carriers serving the city include Jet Airways, IndiGo,
+                    SpiceJet, GoAir, Vistara, Air India, British Airways, Lufthansa, Emirates, Turkish Airlines, Air
+                    France, Singapore Airlines, and Qatar Airways.
+                </p><br>
+                <br>
+                <h3>By train 🚆</h3>
+                <br>
+                <p>To get to the Elephanta Caves you need to arrive at the Gateway of India first, from where it is a
+                    ferry ride away.
+                    <br> The railway station nearest to the Gateway of India is Churchgate, a very prominent south
+                    Mumbai address.
+                    <br>Headquarters of the Western Railways, Churchgate is one of Mumbai’s oldest and busiest stations
+                    connected with the rest of the city by trains, buses and taxis. From the railway station, the
+                    Gateway of India is a mere two-kilometres which can be covered by a taxi.
+
+                </p>
+                <br><br>
+                <h3>By road </h3>
+                <br>
+
+                <p>There are two city buses, 111 and 112 that depart from Mumbai CST and Ahilyabai Holkar Chowk
+                    respectively and drop you at the Gateway of India.
+                    <br>To get to the Elephanta Island, further board the ferry from the Gateway of India jetty.
+
+                </p>
+
+
+            </div>
+        </div>
+
+
+        </div>
+        </div> -->
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27117.461897243447!2d72.9141889125516!3d18.960307884633433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5307da3602f%3A0xf4ab181b1aaef53f!2sElephanta%20Caves!5e0!3m2!1sen!2sin!4v1647493870176!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+</html>
